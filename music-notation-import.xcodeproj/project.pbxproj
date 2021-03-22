@@ -1,0 +1,679 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 53;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E2146B6125D313750082EF85 /* GuitarProInterchangeFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2146B6025D310D00082EF85 /* GuitarProInterchangeFormat.swift */; };
+		E2146B6225D313780082EF85 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2146B5F25D310D00082EF85 /* Note.swift */; };
+		E219E56225DDF48A0060589D /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = E219E56125DDF48A0060589D /* ZIPFoundation */; };
+		E219E56425E57A2A0060589D /* TimeSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = E219E56325E57A290060589D /* TimeSignature.swift */; };
+		E219E56625E6CD8B0060589D /* StringParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E219E56525E6CD8B0060589D /* StringParser.swift */; };
+		E219E56825E6DAFA0060589D /* TimeSignatureParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E219E56725E6DAFA0060589D /* TimeSignatureParserTests.swift */; };
+		E219E56B25E6E4180060589D /* TimeSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = E219E56325E57A290060589D /* TimeSignature.swift */; };
+		E219E56C25E6E42D0060589D /* StringParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E219E56525E6CD8B0060589D /* StringParser.swift */; };
+		E219E56D25E6E43C0060589D /* Automation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22365B625D4E71E00258DD5 /* Automation.swift */; };
+		E219E56E25E6E43C0060589D /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22365B825D4E76100258DD5 /* Score.swift */; };
+		E219E56F25E6E43C0060589D /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22365AD25D4E5E600258DD5 /* Sound.swift */; };
+		E219E57025E6E43C0060589D /* InstrumentSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22365A825D4E54F00258DD5 /* InstrumentSet.swift */; };
+		E219E57125E6E43C0060589D /* Transpose.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22365AC25D4E5E600258DD5 /* Transpose.swift */; };
+		E219E57225E6E43C0060589D /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24F6D1F25D31DFE0041ED72 /* Track.swift */; };
+		E219E57325E6E43C0060589D /* GuitarProInterchangeFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2146B6025D310D00082EF85 /* GuitarProInterchangeFormat.swift */; };
+		E219E57425E6E43C0060589D /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22365BA25D4F09000258DD5 /* Key.swift */; };
+		E219E57525E6E43C0060589D /* Lyrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22365B225D4E6A000258DD5 /* Lyrics.swift */; };
+		E219E57625E6E43C0060589D /* MIDIConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22365B025D4E64600258DD5 /* MIDIConnection.swift */; };
+		E219E57725E6E43C0060589D /* Staff.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22365B425D4E6E200258DD5 /* Staff.swift */; };
+		E219E57825E6E43C0060589D /* Voice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24F6D1E25D31DFE0041ED72 /* Voice.swift */; };
+		E219E57925E6E43C0060589D /* Beat.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24F6D2025D31DFE0041ED72 /* Beat.swift */; };
+		E219E57A25E6E43C0060589D /* ChannelStrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22365AA25D4E58200258DD5 /* ChannelStrip.swift */; };
+		E219E57B25E6E43C0060589D /* MasterBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24F6D2125D31DFE0041ED72 /* MasterBar.swift */; };
+		E219E57C25E6E43C0060589D /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2146B5F25D310D00082EF85 /* Note.swift */; };
+		E219E57D25E6E43C0060589D /* Rhythm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24F6D2225D31DFE0041ED72 /* Rhythm.swift */; };
+		E22365A025D4CC2500258DD5 /* mnc_import_tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E223659F25D4CC2500258DD5 /* mnc_import_tests.swift */; };
+		E22365A725D4CD1200258DD5 /* SWXMLHash in Frameworks */ = {isa = PBXBuildFile; productRef = E22365A625D4CD1200258DD5 /* SWXMLHash */; };
+		E22365A925D4E54F00258DD5 /* InstrumentSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22365A825D4E54F00258DD5 /* InstrumentSet.swift */; };
+		E22365AB25D4E58200258DD5 /* ChannelStrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22365AA25D4E58200258DD5 /* ChannelStrip.swift */; };
+		E22365AE25D4E5E600258DD5 /* Transpose.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22365AC25D4E5E600258DD5 /* Transpose.swift */; };
+		E22365AF25D4E5E600258DD5 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22365AD25D4E5E600258DD5 /* Sound.swift */; };
+		E22365B125D4E64600258DD5 /* MIDIConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22365B025D4E64600258DD5 /* MIDIConnection.swift */; };
+		E22365B325D4E6A000258DD5 /* Lyrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22365B225D4E6A000258DD5 /* Lyrics.swift */; };
+		E22365B525D4E6E200258DD5 /* Staff.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22365B425D4E6E200258DD5 /* Staff.swift */; };
+		E22365B725D4E71E00258DD5 /* Automation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22365B625D4E71E00258DD5 /* Automation.swift */; };
+		E22365B925D4E76100258DD5 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22365B825D4E76100258DD5 /* Score.swift */; };
+		E22365BB25D4F09000258DD5 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22365BA25D4F09000258DD5 /* Key.swift */; };
+		E24F6D2325D31DFE0041ED72 /* Voice.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24F6D1E25D31DFE0041ED72 /* Voice.swift */; };
+		E24F6D2425D31DFE0041ED72 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24F6D1F25D31DFE0041ED72 /* Track.swift */; };
+		E24F6D2525D31DFE0041ED72 /* Beat.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24F6D2025D31DFE0041ED72 /* Beat.swift */; };
+		E24F6D2625D31DFE0041ED72 /* MasterBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24F6D2125D31DFE0041ED72 /* MasterBar.swift */; };
+		E24F6D2725D31DFE0041ED72 /* Rhythm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24F6D2225D31DFE0041ED72 /* Rhythm.swift */; };
+		E29E868D260918680032DFD5 /* MusicNotation in Frameworks */ = {isa = PBXBuildFile; productRef = E29E868C260918680032DFD5 /* MusicNotation */; };
+		E2DB7E7625C86E0700F7395D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB7E7525C86E0700F7395D /* main.swift */; };
+		E2DB7E7F25C8735900F7395D /* SWXMLHash in Frameworks */ = {isa = PBXBuildFile; productRef = E2DB7E7E25C8735900F7395D /* SWXMLHash */; };
+		E2DB7E8425C87C7600F7395D /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = E2DB7E8325C87C7600F7395D /* ArgumentParser */; };
+		E2DB7E8925C87E5500F7395D /* URL+File.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB7E8725C87E5500F7395D /* URL+File.swift */; };
+		E2DB7E8A25C87E5500F7395D /* FileManager+Exists.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB7E8825C87E5500F7395D /* FileManager+Exists.swift */; };
+		E2DB7E8D25C87ECC00F7395D /* ImportOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB7E8C25C87ECC00F7395D /* ImportOptions.swift */; };
+		E2DB7E9025C87F3A00F7395D /* GuitarPro7Importer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB7E8F25C87F3A00F7395D /* GuitarPro7Importer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E219E56925E6E3180060589D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2DB7E6A25C86E0700F7395D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2DB7E7125C86E0700F7395D;
+			remoteInfo = "music-notation-import";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E2DB7E7025C86E0700F7395D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E2146B5F25D310D00082EF85 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		E2146B6025D310D00082EF85 /* GuitarProInterchangeFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuitarProInterchangeFormat.swift; sourceTree = "<group>"; };
+		E219E56325E57A290060589D /* TimeSignature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSignature.swift; sourceTree = "<group>"; };
+		E219E56525E6CD8B0060589D /* StringParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringParser.swift; sourceTree = "<group>"; };
+		E219E56725E6DAFA0060589D /* TimeSignatureParserTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSignatureParserTests.swift; sourceTree = "<group>"; };
+		E223659D25D4CC2500258DD5 /* music-notation-import-tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "music-notation-import-tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E223659F25D4CC2500258DD5 /* mnc_import_tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mnc_import_tests.swift; sourceTree = "<group>"; };
+		E22365A125D4CC2500258DD5 /* Info.plist */ = {isa = PBXFileReference; explicitFileType = text.xml; path = Info.plist; sourceTree = "<group>"; };
+		E22365A825D4E54F00258DD5 /* InstrumentSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstrumentSet.swift; sourceTree = "<group>"; };
+		E22365AA25D4E58200258DD5 /* ChannelStrip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelStrip.swift; sourceTree = "<group>"; };
+		E22365AC25D4E5E600258DD5 /* Transpose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transpose.swift; sourceTree = "<group>"; };
+		E22365AD25D4E5E600258DD5 /* Sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
+		E22365B025D4E64600258DD5 /* MIDIConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIDIConnection.swift; sourceTree = "<group>"; };
+		E22365B225D4E6A000258DD5 /* Lyrics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lyrics.swift; sourceTree = "<group>"; };
+		E22365B425D4E6E200258DD5 /* Staff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Staff.swift; sourceTree = "<group>"; };
+		E22365B625D4E71E00258DD5 /* Automation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Automation.swift; sourceTree = "<group>"; };
+		E22365B825D4E76100258DD5 /* Score.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		E22365BA25D4F09000258DD5 /* Key.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Key.swift; sourceTree = "<group>"; };
+		E24F6D1E25D31DFE0041ED72 /* Voice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Voice.swift; sourceTree = "<group>"; };
+		E24F6D1F25D31DFE0041ED72 /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		E24F6D2025D31DFE0041ED72 /* Beat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beat.swift; sourceTree = "<group>"; };
+		E24F6D2125D31DFE0041ED72 /* MasterBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterBar.swift; sourceTree = "<group>"; };
+		E24F6D2225D31DFE0041ED72 /* Rhythm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rhythm.swift; sourceTree = "<group>"; };
+		E2DB7E7225C86E0700F7395D /* music-notation-import */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "music-notation-import"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2DB7E7525C86E0700F7395D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		E2DB7E8725C87E5500F7395D /* URL+File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+File.swift"; sourceTree = "<group>"; };
+		E2DB7E8825C87E5500F7395D /* FileManager+Exists.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+Exists.swift"; sourceTree = "<group>"; };
+		E2DB7E8C25C87ECC00F7395D /* ImportOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImportOptions.swift; sourceTree = "<group>"; };
+		E2DB7E8F25C87F3A00F7395D /* GuitarPro7Importer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuitarPro7Importer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E223659A25D4CC2500258DD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E22365A725D4CD1200258DD5 /* SWXMLHash in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2DB7E6F25C86E0700F7395D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2DB7E8425C87C7600F7395D /* ArgumentParser in Frameworks */,
+				E2DB7E7F25C8735900F7395D /* SWXMLHash in Frameworks */,
+				E29E868D260918680032DFD5 /* MusicNotation in Frameworks */,
+				E219E56225DDF48A0060589D /* ZIPFoundation in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E2146B5E25D310D00082EF85 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E22365B625D4E71E00258DD5 /* Automation.swift */,
+				E24F6D2125D31DFE0041ED72 /* MasterBar.swift */,
+				E24F6D2025D31DFE0041ED72 /* Beat.swift */,
+				E22365AA25D4E58200258DD5 /* ChannelStrip.swift */,
+				E2146B6025D310D00082EF85 /* GuitarProInterchangeFormat.swift */,
+				E22365A825D4E54F00258DD5 /* InstrumentSet.swift */,
+				E22365BA25D4F09000258DD5 /* Key.swift */,
+				E22365B225D4E6A000258DD5 /* Lyrics.swift */,
+				E22365B025D4E64600258DD5 /* MIDIConnection.swift */,
+				E2146B5F25D310D00082EF85 /* Note.swift */,
+				E24F6D2225D31DFE0041ED72 /* Rhythm.swift */,
+				E22365B825D4E76100258DD5 /* Score.swift */,
+				E22365AD25D4E5E600258DD5 /* Sound.swift */,
+				E22365B425D4E6E200258DD5 /* Staff.swift */,
+				E219E56325E57A290060589D /* TimeSignature.swift */,
+				E24F6D1F25D31DFE0041ED72 /* Track.swift */,
+				E22365AC25D4E5E600258DD5 /* Transpose.swift */,
+				E24F6D1E25D31DFE0041ED72 /* Voice.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E223659E25D4CC2500258DD5 /* music-notation-import-tests */ = {
+			isa = PBXGroup;
+			children = (
+				E2C7829925FFC8E70005C1D3 /* GuitarPro7 */,
+				E223659F25D4CC2500258DD5 /* mnc_import_tests.swift */,
+				E22365A125D4CC2500258DD5 /* Info.plist */,
+			);
+			path = "music-notation-import-tests";
+			sourceTree = "<group>";
+		};
+		E22365A525D4CD1200258DD5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2C7829825FFC1480005C1D3 /* GuitarPro7 */ = {
+			isa = PBXGroup;
+			children = (
+				E2146B5E25D310D00082EF85 /* Models */,
+				E2DB7E8F25C87F3A00F7395D /* GuitarPro7Importer.swift */,
+			);
+			path = GuitarPro7;
+			sourceTree = "<group>";
+		};
+		E2C7829925FFC8E70005C1D3 /* GuitarPro7 */ = {
+			isa = PBXGroup;
+			children = (
+				E219E56725E6DAFA0060589D /* TimeSignatureParserTests.swift */,
+			);
+			path = GuitarPro7;
+			sourceTree = "<group>";
+		};
+		E2DB7E6925C86E0700F7395D = {
+			isa = PBXGroup;
+			children = (
+				E2DB7E7425C86E0700F7395D /* music-notation-import */,
+				E223659E25D4CC2500258DD5 /* music-notation-import-tests */,
+				E2DB7E7325C86E0700F7395D /* Products */,
+				E22365A525D4CD1200258DD5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E2DB7E7325C86E0700F7395D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E2DB7E7225C86E0700F7395D /* music-notation-import */,
+				E223659D25D4CC2500258DD5 /* music-notation-import-tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2DB7E7425C86E0700F7395D /* music-notation-import */ = {
+			isa = PBXGroup;
+			children = (
+				E2C7829825FFC1480005C1D3 /* GuitarPro7 */,
+				E2DB7E8625C87E2D00F7395D /* Utilities */,
+				E2DB7E8C25C87ECC00F7395D /* ImportOptions.swift */,
+				E2DB7E7525C86E0700F7395D /* main.swift */,
+			);
+			path = "music-notation-import";
+			sourceTree = "<group>";
+		};
+		E2DB7E8625C87E2D00F7395D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E2DB7E8825C87E5500F7395D /* FileManager+Exists.swift */,
+				E219E56525E6CD8B0060589D /* StringParser.swift */,
+				E2DB7E8725C87E5500F7395D /* URL+File.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E223659C25D4CC2500258DD5 /* music-notation-import-tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E22365A425D4CC2500258DD5 /* Build configuration list for PBXNativeTarget "music-notation-import-tests" */;
+			buildPhases = (
+				E223659925D4CC2500258DD5 /* Sources */,
+				E223659A25D4CC2500258DD5 /* Frameworks */,
+				E223659B25D4CC2500258DD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E219E56A25E6E3180060589D /* PBXTargetDependency */,
+			);
+			name = "music-notation-import-tests";
+			packageProductDependencies = (
+				E22365A625D4CD1200258DD5 /* SWXMLHash */,
+			);
+			productName = "music-notation-import-tests";
+			productReference = E223659D25D4CC2500258DD5 /* music-notation-import-tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E2DB7E7125C86E0700F7395D /* music-notation-import */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2DB7E7925C86E0700F7395D /* Build configuration list for PBXNativeTarget "music-notation-import" */;
+			buildPhases = (
+				E2DB7E6E25C86E0700F7395D /* Sources */,
+				E2DB7E6F25C86E0700F7395D /* Frameworks */,
+				E2DB7E7025C86E0700F7395D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "music-notation-import";
+			packageProductDependencies = (
+				E2DB7E7E25C8735900F7395D /* SWXMLHash */,
+				E2DB7E8325C87C7600F7395D /* ArgumentParser */,
+				E219E56125DDF48A0060589D /* ZIPFoundation */,
+				E29E868C260918680032DFD5 /* MusicNotation */,
+			);
+			productName = "music-notation-import";
+			productReference = E2DB7E7225C86E0700F7395D /* music-notation-import */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E2DB7E6A25C86E0700F7395D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					E223659C25D4CC2500258DD5 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					E2DB7E7125C86E0700F7395D = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = E2DB7E6D25C86E0700F7395D /* Build configuration list for PBXProject "music-notation-import" */;
+			compatibilityVersion = "Xcode 11.4";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E2DB7E6925C86E0700F7395D;
+			packageReferences = (
+				E2DB7E7D25C8735900F7395D /* XCRemoteSwiftPackageReference "SWXMLHash" */,
+				E2DB7E8225C87C7600F7395D /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+				E219E56025DDF48A0060589D /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
+				E29E868B260918680032DFD5 /* XCRemoteSwiftPackageReference "music-notation" */,
+			);
+			productRefGroup = E2DB7E7325C86E0700F7395D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E2DB7E7125C86E0700F7395D /* music-notation-import */,
+				E223659C25D4CC2500258DD5 /* music-notation-import-tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E223659B25D4CC2500258DD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E223659925D4CC2500258DD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E219E57725E6E43C0060589D /* Staff.swift in Sources */,
+				E219E57125E6E43C0060589D /* Transpose.swift in Sources */,
+				E219E57225E6E43C0060589D /* Track.swift in Sources */,
+				E219E57D25E6E43C0060589D /* Rhythm.swift in Sources */,
+				E219E57625E6E43C0060589D /* MIDIConnection.swift in Sources */,
+				E219E57525E6E43C0060589D /* Lyrics.swift in Sources */,
+				E219E56F25E6E43C0060589D /* Sound.swift in Sources */,
+				E219E56825E6DAFA0060589D /* TimeSignatureParserTests.swift in Sources */,
+				E219E57325E6E43C0060589D /* GuitarProInterchangeFormat.swift in Sources */,
+				E219E57B25E6E43C0060589D /* MasterBar.swift in Sources */,
+				E219E57A25E6E43C0060589D /* ChannelStrip.swift in Sources */,
+				E219E57925E6E43C0060589D /* Beat.swift in Sources */,
+				E219E57425E6E43C0060589D /* Key.swift in Sources */,
+				E219E56C25E6E42D0060589D /* StringParser.swift in Sources */,
+				E219E57025E6E43C0060589D /* InstrumentSet.swift in Sources */,
+				E22365A025D4CC2500258DD5 /* mnc_import_tests.swift in Sources */,
+				E219E57C25E6E43C0060589D /* Note.swift in Sources */,
+				E219E57825E6E43C0060589D /* Voice.swift in Sources */,
+				E219E56D25E6E43C0060589D /* Automation.swift in Sources */,
+				E219E56E25E6E43C0060589D /* Score.swift in Sources */,
+				E219E56B25E6E4180060589D /* TimeSignature.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2DB7E6E25C86E0700F7395D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2DB7E9025C87F3A00F7395D /* GuitarPro7Importer.swift in Sources */,
+				E2DB7E8D25C87ECC00F7395D /* ImportOptions.swift in Sources */,
+				E24F6D2625D31DFE0041ED72 /* MasterBar.swift in Sources */,
+				E24F6D2725D31DFE0041ED72 /* Rhythm.swift in Sources */,
+				E2146B6225D313780082EF85 /* Note.swift in Sources */,
+				E22365A925D4E54F00258DD5 /* InstrumentSet.swift in Sources */,
+				E22365AB25D4E58200258DD5 /* ChannelStrip.swift in Sources */,
+				E22365B925D4E76100258DD5 /* Score.swift in Sources */,
+				E24F6D2525D31DFE0041ED72 /* Beat.swift in Sources */,
+				E219E56625E6CD8B0060589D /* StringParser.swift in Sources */,
+				E22365B725D4E71E00258DD5 /* Automation.swift in Sources */,
+				E2DB7E7625C86E0700F7395D /* main.swift in Sources */,
+				E22365B325D4E6A000258DD5 /* Lyrics.swift in Sources */,
+				E24F6D2325D31DFE0041ED72 /* Voice.swift in Sources */,
+				E22365BB25D4F09000258DD5 /* Key.swift in Sources */,
+				E22365B125D4E64600258DD5 /* MIDIConnection.swift in Sources */,
+				E24F6D2425D31DFE0041ED72 /* Track.swift in Sources */,
+				E22365B525D4E6E200258DD5 /* Staff.swift in Sources */,
+				E2DB7E8A25C87E5500F7395D /* FileManager+Exists.swift in Sources */,
+				E22365AE25D4E5E600258DD5 /* Transpose.swift in Sources */,
+				E2DB7E8925C87E5500F7395D /* URL+File.swift in Sources */,
+				E2146B6125D313750082EF85 /* GuitarProInterchangeFormat.swift in Sources */,
+				E219E56425E57A2A0060589D /* TimeSignature.swift in Sources */,
+				E22365AF25D4E5E600258DD5 /* Sound.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E219E56A25E6E3180060589D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E2DB7E7125C86E0700F7395D /* music-notation-import */;
+			targetProxy = E219E56925E6E3180060589D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E22365A225D4CC2500258DD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = T8F2X3K4US;
+				INFOPLIST_FILE = "music-notation-import-tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.woolsoft.music-notation-import-tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E22365A325D4CC2500258DD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = T8F2X3K4US;
+				INFOPLIST_FILE = "music-notation-import-tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.woolsoft.music-notation-import-tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E2DB7E7725C86E0700F7395D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E2DB7E7825C86E0700F7395D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		E2DB7E7A25C86E0700F7395D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T8F2X3K4US;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E2DB7E7B25C86E0700F7395D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T8F2X3K4US;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E22365A425D4CC2500258DD5 /* Build configuration list for PBXNativeTarget "music-notation-import-tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E22365A225D4CC2500258DD5 /* Debug */,
+				E22365A325D4CC2500258DD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2DB7E6D25C86E0700F7395D /* Build configuration list for PBXProject "music-notation-import" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2DB7E7725C86E0700F7395D /* Debug */,
+				E2DB7E7825C86E0700F7395D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2DB7E7925C86E0700F7395D /* Build configuration list for PBXNativeTarget "music-notation-import" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2DB7E7A25C86E0700F7395D /* Debug */,
+				E2DB7E7B25C86E0700F7395D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E219E56025DDF48A0060589D /* XCRemoteSwiftPackageReference "ZIPFoundation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:weichsel/ZIPFoundation.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.11;
+			};
+		};
+		E29E868B260918680032DFD5 /* XCRemoteSwiftPackageReference "music-notation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:music-notation-swift/music-notation.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.2;
+			};
+		};
+		E2DB7E7D25C8735900F7395D /* XCRemoteSwiftPackageReference "SWXMLHash" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:drmohundro/SWXMLHash.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		E2DB7E8225C87C7600F7395D /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:apple/swift-argument-parser";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E219E56125DDF48A0060589D /* ZIPFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E219E56025DDF48A0060589D /* XCRemoteSwiftPackageReference "ZIPFoundation" */;
+			productName = ZIPFoundation;
+		};
+		E22365A625D4CD1200258DD5 /* SWXMLHash */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E2DB7E7D25C8735900F7395D /* XCRemoteSwiftPackageReference "SWXMLHash" */;
+			productName = SWXMLHash;
+		};
+		E29E868C260918680032DFD5 /* MusicNotation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E29E868B260918680032DFD5 /* XCRemoteSwiftPackageReference "music-notation" */;
+			productName = MusicNotation;
+		};
+		E2DB7E7E25C8735900F7395D /* SWXMLHash */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E2DB7E7D25C8735900F7395D /* XCRemoteSwiftPackageReference "SWXMLHash" */;
+			productName = SWXMLHash;
+		};
+		E2DB7E8325C87C7600F7395D /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E2DB7E8225C87C7600F7395D /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E2DB7E6A25C86E0700F7395D /* Project object */;
+}

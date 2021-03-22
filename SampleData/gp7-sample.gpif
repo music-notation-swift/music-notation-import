@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GPIF xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<GPVersion>7</GPVersion>
+	<GPRevision required="12021" recommended="12023">12025</GPRevision>
+	<Encoding></Encoding>
+	<Score>
+	    <Title>
+<![CDATA[Title CData]]>
+    	</Title>
+		<SubTitle>
+<![CDATA[SubTitle CData]]>
+    	</SubTitle>
+    	<Artist>
+<![CDATA[Artist CData]]>
+    	</Artist>
+    	<Album>
+<![CDATA[Album CData]]>
+    	</Album>
+    	<Words>
+<![CDATA[Words CData]]>
+    	</Words>
+    	<Music>
+<![CDATA[Music CData]]>
+    	</Music>
+    	<WordsAndMusic>
+<![CDATA[Words And Music CData]]>
+    	</WordsAndMusic>
+    	<Copyright>
+<![CDATA[Copyright CData]]>
+    	</Copyright>
+    	<Tabber>
+<![CDATA[Tabber CData]]>
+    	</Tabber>
+    	<Instructions>
+<![CDATA[Instruction CData]]>
+    	</Instructions>
+    	<Notices>
+<![CDATA[Notices CData]]>
+    	</Notices>
+    	<FirstPageHeader>
+<![CDATA[<html><head><meta name="qrichtext" content="1" /><style type="text/css">p, li { white-space: pre-wrap; }</style></head><body style=" font-family:'Times New Roman'; font-size:16pt; font-weight:400; font-style:normal;"><p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;"><span style=" font-family:'Times New Roman'; font-size:35pt;">%TITLE%</span></p><p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;"><span style=" font-family:'Times New Roman'; font-size:16pt;">%SUBTITLE%</span></p><p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;"><span style=" font-family:'Times New Roman'; font-size:16pt;">%ARTIST%</span></p><p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;"><span style=" font-family:'Times New Roman'; font-size:16pt;">%ALBUM%</span></p><p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;"><span style=" font-family:'Times New Roman'; font-size:12pt;">%WORDS&MUSIC%</span></p></body></html>]]>
+    	</FirstPageHeader>
+    	<FirstPageFooter>
+<![CDATA[<html><head><meta name="qrichtext" content="1" /><style type="text/css">p, li { white-space: pre-wrap; }</style></head><body style=" font-family:'Lucida Grande'; font-size:13pt; font-weight:400; font-style:normal;"><p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Times'; font-size:14pt;">Page %page%/%pages%</p></body></html>]]>
+    	</FirstPageFooter>
+    	<PageHeader>
+<![CDATA[PageHeader CData]]>
+    	</PageHeader>
+    	<PageFooter>
+<![CDATA[<html><head><meta name="qrichtext" content="1" /><style type="text/css">p, li { white-space: pre-wrap; }</style></head><body style=" font-family:'Lucida Grande'; font-size:13pt; font-weight:400; font-style:normal;"><p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Times'; font-size:14pt;">Page %page%/%pages%</p></body></html>]]>
+    	</PageFooter>
+    	<ScoreSystemsDefaultLayout>4</ScoreSystemsDefaultLayout>
+    	<ScoreSystemsLayout>4</ScoreSystemsLayout>
+    	<ScoreZoomPolicy>FitWidth</ScoreZoomPolicy>
+    	<ScoreZoom>1.0</ScoreZoom>
+    	<MultiVoice>0&gt;</MultiVoice>
+	</Score>
+	<MasterTrack></MasterTrack>
+	<AudioTracks></AudioTracks>
+	<Tracks>
+		<Track id="0">
+			<Name></Name>
+		</Track>
+		<Track id="1">
+		</Track>
+		<Track id="2">
+		</Track>
+		<Track id="3">
+		</Track>
+	</Tracks>
+	<Bars></Bars>
+	<Voices></Voices>
+	<Beats></Beats>
+	<Notes></Notes>
+	<Rhythms></Rhythms>
+</GPIF>
