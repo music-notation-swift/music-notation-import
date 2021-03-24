@@ -21,11 +21,9 @@ jobs:
 
     - name: Build
       run: |
-        for ip in $(dig @8.8.8.8 github.com +short); do ssh-keyscan github.com,$ip; ssh-keyscan $ip; done 2>/dev/null >> ~/.ssh/known_hosts
         xcodebuild build -project music-notation-import.xcodeproj -scheme "music-notation-import" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
 #        | xcpretty && exit ${PIPESTATUS[0]}
 
     - name: Tests
       run: |
-        for ip in $(dig @8.8.8.8 github.com +short); do ssh-keyscan github.com,$ip; ssh-keyscan $ip; done 2>/dev/null >> ~/.ssh/known_hosts
         xcodebuild test -project music-notation-import.xcodeproj -scheme "music-notation-import-tests" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty && exit ${PIPESTATUS[0]}
