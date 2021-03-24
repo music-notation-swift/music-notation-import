@@ -50,6 +50,7 @@
 		E24F6D2725D31DFE0041ED72 /* Rhythm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24F6D2225D31DFE0041ED72 /* Rhythm.swift */; };
 		E29E868D260918680032DFD5 /* MusicNotation in Frameworks */ = {isa = PBXBuildFile; productRef = E29E868C260918680032DFD5 /* MusicNotation */; };
 		E2C66260260BC2F7003A5291 /* SWXMLHash in Frameworks */ = {isa = PBXBuildFile; productRef = E2C6625F260BC2F7003A5291 /* SWXMLHash */; };
+		E2C66262260BE88B003A5291 /* SWXMLHash in Frameworks */ = {isa = PBXBuildFile; productRef = E2C66261260BE88B003A5291 /* SWXMLHash */; };
 		E2DB7E7625C86E0700F7395D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB7E7525C86E0700F7395D /* main.swift */; };
 		E2DB7E8425C87C7600F7395D /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = E2DB7E8325C87C7600F7395D /* ArgumentParser */; };
 		E2DB7E8925C87E5500F7395D /* URL+File.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB7E8725C87E5500F7395D /* URL+File.swift */; };
@@ -117,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2C66262260BE88B003A5291 /* SWXMLHash in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +253,7 @@
 			);
 			name = "music-notation-import-tests";
 			packageProductDependencies = (
+				E2C66261260BE88B003A5291 /* SWXMLHash */,
 			);
 			productName = "music-notation-import-tests";
 			productReference = E223659D25D4CC2500258DD5 /* music-notation-import-tests.xctest */;
@@ -414,7 +417,6 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.woolsoft.music-notation-import-tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -433,7 +435,6 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.woolsoft.music-notation-import-tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -491,7 +492,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -546,7 +547,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -656,6 +657,11 @@
 			productName = MusicNotation;
 		};
 		E2C6625F260BC2F7003A5291 /* SWXMLHash */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E2C6625E260BC2F7003A5291 /* XCRemoteSwiftPackageReference "SWXMLHash" */;
+			productName = SWXMLHash;
+		};
+		E2C66261260BE88B003A5291 /* SWXMLHash */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E2C6625E260BC2F7003A5291 /* XCRemoteSwiftPackageReference "SWXMLHash" */;
 			productName = SWXMLHash;
