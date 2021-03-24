@@ -18,7 +18,8 @@ jobs:
 
     - name: Build
       run: |
-        xcodebuild build -project music-notation-import.xcodeproj -scheme "music-notation-import" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty && exit ${PIPESTATUS[0]}
+        xcodebuild build -project music-notation-import.xcodeproj -scheme "music-notation-import" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+#        | xcpretty && exit ${PIPESTATUS[0]}
 
     - name: Tests
       run: |
