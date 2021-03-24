@@ -59,7 +59,8 @@ struct GuitarPro7Importer {
 		let interchangeFormat = try parseXML(xmlString)
 		try createNotation(with: interchangeFormat)
 
-		return MusicNotation.Score()
+		let staff = MusicNotation.Staff(clef: Clef.treble, instrument: .guitar6)
+		return MusicNotation.Score(staves: [staff])
 	}
 
 	func parseXML(_ xmlString: String) throws -> GuitarProInterchangeFormat {
