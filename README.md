@@ -17,9 +17,10 @@ Guitar Pro 7 is a zipped file format (`.gp`) which expands into a folder that ha
 ![Guitar Pro 7 File Format](images/gp7-contents.png)
 
 The `score.gpif` file is an application specific XML file.
-The files in the GuitarPro7 folder are those specific to parsing this file format.
 
-`music-notation-import` not supports specifying the `gpif` file alone, or specifying the container `gp` file. Using the [ZIPFoundation](https://github.com/weichsel/ZIPFoundation) the process will pull out the `score.gpif` file and parse that directly.
+The source files in the GuitarPro7 folder are those specific to parsing this file format.
+
+`music-notation-import` now supports specifying the `gpif` file alone, or specifying the container `gp` file. Using the [ZIPFoundation](https://github.com/weichsel/ZIPFoundation) the process will pull out the `score.gpif` file and parse that directly.
 
 ## Dependencies
 
