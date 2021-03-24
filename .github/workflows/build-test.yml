@@ -11,19 +11,20 @@ on:
 jobs:
   macos:
     runs-on: macos-latest
-    - uses: maxim-lobanov/setup-xcode@v1
-      with:
-        xcode-version: '12.5'
 
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
+      - uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: '12.5'
 
-    - name: Build
-      run: |
-        xcodebuild build -project music-notation-import.xcodeproj -scheme "music-notation-import" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Build
+        run: |
+          xcodebuild build -project music-notation-import.xcodeproj -scheme "music-notation-import" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
 #        | xcpretty && exit ${PIPESTATUS[0]}
 
-    - name: Tests
-      run: |
-        xcodebuild test -project music-notation-import.xcodeproj -scheme "music-notation-import-tests" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty && exit ${PIPESTATUS[0]}
+      - name: Tests
+        run: |
+          xcodebuild test -project music-notation-import.xcodeproj -scheme "music-notation-import-tests" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty && exit ${PIPESTATUS[0]}
