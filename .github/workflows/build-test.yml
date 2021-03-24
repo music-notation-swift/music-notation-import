@@ -1,0 +1,27 @@
+# Build and test the code in the music-notation swift package.
+
+name: Build & Test
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  macos:
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Build
+      run: |
+        set -o pipefail
+        xcodebuild build -project music-notation-import.xcodeproj -scheme "music-notation-import" | xcpretty
+
+    - name: Tests
+      run: |
+        set -o pipefail
+        xcodebuild test -project music-notation-import.xcodeproj -scheme "music-notation-import-tests" | xcpretty
