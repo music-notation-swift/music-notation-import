@@ -33,7 +33,6 @@
 		E219E57C25E6E43C0060589D /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2146B5F25D310D00082EF85 /* Note.swift */; };
 		E219E57D25E6E43C0060589D /* Rhythm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24F6D2225D31DFE0041ED72 /* Rhythm.swift */; };
 		E22365A025D4CC2500258DD5 /* mnc_import_tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E223659F25D4CC2500258DD5 /* mnc_import_tests.swift */; };
-		E22365A725D4CD1200258DD5 /* SWXMLHash in Frameworks */ = {isa = PBXBuildFile; productRef = E22365A625D4CD1200258DD5 /* SWXMLHash */; };
 		E22365A925D4E54F00258DD5 /* InstrumentSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22365A825D4E54F00258DD5 /* InstrumentSet.swift */; };
 		E22365AB25D4E58200258DD5 /* ChannelStrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22365AA25D4E58200258DD5 /* ChannelStrip.swift */; };
 		E22365AE25D4E5E600258DD5 /* Transpose.swift in Sources */ = {isa = PBXBuildFile; fileRef = E22365AC25D4E5E600258DD5 /* Transpose.swift */; };
@@ -50,8 +49,8 @@
 		E24F6D2625D31DFE0041ED72 /* MasterBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24F6D2125D31DFE0041ED72 /* MasterBar.swift */; };
 		E24F6D2725D31DFE0041ED72 /* Rhythm.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24F6D2225D31DFE0041ED72 /* Rhythm.swift */; };
 		E29E868D260918680032DFD5 /* MusicNotation in Frameworks */ = {isa = PBXBuildFile; productRef = E29E868C260918680032DFD5 /* MusicNotation */; };
+		E2C66260260BC2F7003A5291 /* SWXMLHash in Frameworks */ = {isa = PBXBuildFile; productRef = E2C6625F260BC2F7003A5291 /* SWXMLHash */; };
 		E2DB7E7625C86E0700F7395D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB7E7525C86E0700F7395D /* main.swift */; };
-		E2DB7E7F25C8735900F7395D /* SWXMLHash in Frameworks */ = {isa = PBXBuildFile; productRef = E2DB7E7E25C8735900F7395D /* SWXMLHash */; };
 		E2DB7E8425C87C7600F7395D /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = E2DB7E8325C87C7600F7395D /* ArgumentParser */; };
 		E2DB7E8925C87E5500F7395D /* URL+File.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB7E8725C87E5500F7395D /* URL+File.swift */; };
 		E2DB7E8A25C87E5500F7395D /* FileManager+Exists.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB7E8825C87E5500F7395D /* FileManager+Exists.swift */; };
@@ -118,7 +117,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E22365A725D4CD1200258DD5 /* SWXMLHash in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,8 +124,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2C66260260BC2F7003A5291 /* SWXMLHash in Frameworks */,
 				E2DB7E8425C87C7600F7395D /* ArgumentParser in Frameworks */,
-				E2DB7E7F25C8735900F7395D /* SWXMLHash in Frameworks */,
 				E29E868D260918680032DFD5 /* MusicNotation in Frameworks */,
 				E219E56225DDF48A0060589D /* ZIPFoundation in Frameworks */,
 			);
@@ -253,7 +251,6 @@
 			);
 			name = "music-notation-import-tests";
 			packageProductDependencies = (
-				E22365A625D4CD1200258DD5 /* SWXMLHash */,
 			);
 			productName = "music-notation-import-tests";
 			productReference = E223659D25D4CC2500258DD5 /* music-notation-import-tests.xctest */;
@@ -273,10 +270,10 @@
 			);
 			name = "music-notation-import";
 			packageProductDependencies = (
-				E2DB7E7E25C8735900F7395D /* SWXMLHash */,
 				E2DB7E8325C87C7600F7395D /* ArgumentParser */,
 				E219E56125DDF48A0060589D /* ZIPFoundation */,
 				E29E868C260918680032DFD5 /* MusicNotation */,
+				E2C6625F260BC2F7003A5291 /* SWXMLHash */,
 			);
 			productName = "music-notation-import";
 			productReference = E2DB7E7225C86E0700F7395D /* music-notation-import */;
@@ -309,10 +306,10 @@
 			);
 			mainGroup = E2DB7E6925C86E0700F7395D;
 			packageReferences = (
-				E2DB7E7D25C8735900F7395D /* XCRemoteSwiftPackageReference "SWXMLHash" */,
 				E2DB7E8225C87C7600F7395D /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
 				E219E56025DDF48A0060589D /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
 				E29E868B260918680032DFD5 /* XCRemoteSwiftPackageReference "music-notation" */,
+				E2C6625E260BC2F7003A5291 /* XCRemoteSwiftPackageReference "SWXMLHash" */,
 			);
 			productRefGroup = E2DB7E7325C86E0700F7395D /* Products */;
 			projectDirPath = "";
@@ -615,7 +612,7 @@
 /* Begin XCRemoteSwiftPackageReference section */
 		E219E56025DDF48A0060589D /* XCRemoteSwiftPackageReference "ZIPFoundation" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:weichsel/ZIPFoundation.git";
+			repositoryURL = "https://github.com/weichsel/ZIPFoundation.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 0.9.11;
@@ -623,23 +620,23 @@
 		};
 		E29E868B260918680032DFD5 /* XCRemoteSwiftPackageReference "music-notation" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:music-notation-swift/music-notation.git";
+			repositoryURL = "https://github.com/music-notation-swift/music-notation.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 0.2.2;
 			};
 		};
-		E2DB7E7D25C8735900F7395D /* XCRemoteSwiftPackageReference "SWXMLHash" */ = {
+		E2C6625E260BC2F7003A5291 /* XCRemoteSwiftPackageReference "SWXMLHash" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:drmohundro/SWXMLHash.git";
+			repositoryURL = "https://github.com/drmohundro/SWXMLHash.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.1;
+				minimumVersion = 5.0.2;
 			};
 		};
 		E2DB7E8225C87C7600F7395D /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:apple/swift-argument-parser";
+			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 0.3.2;
@@ -653,19 +650,14 @@
 			package = E219E56025DDF48A0060589D /* XCRemoteSwiftPackageReference "ZIPFoundation" */;
 			productName = ZIPFoundation;
 		};
-		E22365A625D4CD1200258DD5 /* SWXMLHash */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E2DB7E7D25C8735900F7395D /* XCRemoteSwiftPackageReference "SWXMLHash" */;
-			productName = SWXMLHash;
-		};
 		E29E868C260918680032DFD5 /* MusicNotation */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E29E868B260918680032DFD5 /* XCRemoteSwiftPackageReference "music-notation" */;
 			productName = MusicNotation;
 		};
-		E2DB7E7E25C8735900F7395D /* SWXMLHash */ = {
+		E2C6625F260BC2F7003A5291 /* SWXMLHash */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E2DB7E7D25C8735900F7395D /* XCRemoteSwiftPackageReference "SWXMLHash" */;
+			package = E2C6625E260BC2F7003A5291 /* XCRemoteSwiftPackageReference "SWXMLHash" */;
 			productName = SWXMLHash;
 		};
 		E2DB7E8325C87C7600F7395D /* ArgumentParser */ = {
