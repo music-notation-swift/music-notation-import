@@ -10,7 +10,10 @@ on:
 
 jobs:
   macos:
-    runs-on: macos-latest
+    runs-on: macos-11.0
+    - uses: maxim-lobanov/setup-xcode@v1
+      with:
+        xcode-version: '12.5'
 
     steps:
     - name: Checkout
