@@ -24,7 +24,7 @@ jobs:
           # Programmatically get the path for the profdata
           PROFDATA=$(find .build/Build/ProfileData/ -name "Coverage.profdata" -maxdepth 2 -print -quit)
           
-          xcrun llvm-cov export -summary-only .build/debug/music-notationPackageTests.xctest/Contents/MacOS/music-notationPackageTests -instr-profile ${PROFDATA} > .build/coverage.json
+          xcrun llvm-cov export -summary-only .build/Build/Products/Debug/music-notation-import-tests.xctest/Contents/MacOS/music-notation-import-tests -instr-profile ${PROFDATA} > .build/coverage.json
 
       - name: Get Coverage Total Percent  
         run: |
