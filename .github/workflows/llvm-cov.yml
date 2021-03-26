@@ -1,0 +1,50 @@
+# Generate code coverage metrics on the code in the music-notation swift package.
+
+name: Coverage
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  Coverage:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout the Git repository
+        uses: actions/checkout@v2
+
+      - name: Gather test coverage 
+        run: xcodebuild test -project "music-notation-import.xcodeproj" -scheme "music-notation-import-tests" -derivedDataPath .build/ -enableCodeCoverage YES
+
+      - name: Gather test coverage 
+        run: |
+          # Programmatically get the path for the profdata
+          PROFDATA=$(find .build/Build/ProfileData/ -name "Coverage.profdata" -maxdepth 2 -print -quit)
+          
+          xcrun llvm-cov export -summary-only .build/debug/music-notationPackageTests.xctest/Contents/MacOS/music-notationPackageTests -instr-profile ${PROFDATA} > .build/coverage.json
+
+      - name: Get Coverage Total Percent  
+        run: |
+          # Push the coverage number into the COVERAGE environment variable
+          echo "COVERAGE=$(cat .build/coverage.json|jq '.data[0]["totals"]["lines"]["percent"]')" >> $GITHUB_ENV
+
+          # Use this hack to get to the branch
+          REF=${{ github.ref }}
+          echo "github.ref: $REF"
+          IFS='/' read -ra PATHS <<< "$REF"
+          BRANCH_NAME="${PATHS[1]}_${PATHS[2]}"
+          echo $BRANCH_NAME
+          echo "BRANCH=$(echo ${BRANCH_NAME})" >> $GITHUB_ENV
+
+      - name: Create The Badge
+        uses: schneegans/dynamic-badges-action@v1.0.0
+        with:
+          auth: ${{ secrets.GIST_SECRET }}
+          gistID: b9f858cfba09911bd1755bdc40dd5a35
+          filename: music-notation__${{ env.BRANCH }}.json
+          label: Coverage
+          message: ${{ env.COVERAGE }}
+          color: green
