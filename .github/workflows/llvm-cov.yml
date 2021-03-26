@@ -16,8 +16,8 @@ jobs:
       - name: Checkout the Git repository
         uses: actions/checkout@v2
 
-      - name: Gather test coverage 
-        run: xcodebuild test -project "music-notation-import.xcodeproj" -scheme "music-notation-import-tests" -derivedDataPath .build/ -enableCodeCoverage YES
+      - name: Run Tests 
+        run: xcodebuild test -project "music-notation-import.xcodeproj" -scheme "music-notation-import-tests" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -derivedDataPath .build/ -enableCodeCoverage YES
 
       - name: Gather test coverage 
         run: |
