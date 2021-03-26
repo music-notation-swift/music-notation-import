@@ -45,7 +45,7 @@ jobs:
         with:
           auth: ${{ secrets.GIST_SECRET }}
           gistID: b9f858cfba09911bd1755bdc40dd5a35
-          filename: music-notation__${{ env.BRANCH }}.json
+          filename: music-notation-import__${{ env.BRANCH }}.json
           label: Coverage
           message: ${{ env.COVERAGE }}
           color: green
