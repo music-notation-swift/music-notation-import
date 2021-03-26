@@ -19,17 +19,18 @@ jobs:
       - name: Run Tests 
         run: xcodebuild test -project "music-notation-import.xcodeproj" -scheme "music-notation-import-tests" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO -derivedDataPath .build/ -enableCodeCoverage YES | xcpretty && exit ${PIPESTATUS[0]}
 
-      - name: Gather test coverage 
+      - name: Gather test coverage
         run: |
           # Programmatically get the path for the profdata
           PROFDATA=$(find .build/Build/ProfileData/ -name "Coverage.profdata" -maxdepth 2 -print -quit)
-          
+
           xcrun llvm-cov export -summary-only .build/Build/Products/Debug/music-notation-import-tests.xctest/Contents/MacOS/music-notation-import-tests -instr-profile ${PROFDATA} > .build/coverage.json
 
       - name: Get Coverage Total Percent  
         run: |
           # Push the coverage number into the COVERAGE environment variable
-          echo "COVERAGE=$(cat .build/coverage.json|jq '.data[0]["totals"]["lines"]["percent"]')" >> $GITHUB_ENV
+          RAW_COVERAGE=$(cat .build/coverage.json|jq '.data[0]["totals"]["lines"]["percent"]')
+          echo "COVERAGE=$(awk 'BEGIN { rounded = sprintf("%.2f", ${RAW_COVERAGE}); print rounded }')" >> $GITHUB_ENV
 
           # Use this hack to get to the branch
           REF=${{ github.ref }}
