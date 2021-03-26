@@ -1,4 +1,4 @@
-# Generate code coverage metrics on the code in the music-notation swift package.
+# Generate code coverage metrics on the code in the music-notation-import swift package.
 
 name: Coverage
 
