@@ -54,7 +54,7 @@ struct BasicItem: XMLIndexerDeserializable {
 
 extension BasicItem: Equatable {
 	static func == (lhs: BasicItem, rhs: BasicItem) -> Bool {
-		return a.name == b.name && a.price == b.price
+		return lhs.name == rhs.name && lhs.price == rhs.price
 	}
 }
 
@@ -71,8 +71,8 @@ struct AttributeItem: XMLElementDeserializable {
 }
 
 extension AttributeItem: Equatable {
-	static func == (lhs: AttributeItem, lhs: AttributeItem) -> Bool {
-		return a.name == b.name && a.price == b.price
+	static func == (lhs: AttributeItem, rhs: AttributeItem) -> Bool {
+		return lhs.name == rhs.name && lhs.price == rhs.price
 	}
 }
 
