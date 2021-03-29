@@ -1,15 +1,15 @@
 //
 //	Staff.swift
-//	mnc-import
+//	music-notation-import
 //
 //	Created by Steven Woolgar on 2021-02-10.
-//	Copyright (c) 2020-2021, Steven Woolgar
+//	Copyright © 2020-2021 Steven Woolgar. All rights reserved.
 //
 
 import Foundation
 import SWXMLHash
 
-//<Staff>
+// <Staff>
 //  <Properties>
 //	<Property name="CapoFret"><Fret>0</Fret></Property>
 //	<Property name="FretCount"><Number>24</Number></Property>
@@ -23,7 +23,7 @@ import SWXMLHash
 //	<Property name="TuningFlat"><Enable /></Property>
 //	<Name><![CDATA[Standard]]></Name>
 //  </Properties>
-//</Staff>
+// </Staff>
 
 typealias TuningPitch = Int
 

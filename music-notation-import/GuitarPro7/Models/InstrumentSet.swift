@@ -1,15 +1,15 @@
 //
 //	InstrumentSet.swift
-//	mnc-import
+//	music-notation-import
 //
 //	Created by Steven Woolgar on 2021-02-09.
-//	Copyright (c) 2020-2021, Steven Woolgar
+//	Copyright © 2020-2021 Steven Woolgar. All rights reserved.
 //
 
 import Foundation
 import SWXMLHash
 
-//<InstrumentSet>
+// <InstrumentSet>
 //	<Name>Electric Piano</Name>
 //	<Type>electricPiano</Type>
 //	<LineCount>5</LineCount>

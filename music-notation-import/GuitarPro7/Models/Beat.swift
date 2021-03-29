@@ -1,9 +1,9 @@
 //
 //	Beat.swift
-//	mnc-import
+//	music-notation-import
 //
 //	Created by Steven Woolgar on 2021-02-09.
-//	Copyright (c) 2020-2021, Steven Woolgar
+//	Copyright © 2020-2021 Steven Woolgar. All rights reserved.
 //
 
 import Foundation
@@ -91,6 +91,7 @@ enum ExtraProperty: XMLIndexerDeserializable {
 	case x687935489(Int)
 	case x687935490(Float)
 
+	// swiftlint:disable cyclomatic_complexity
 	static func deserialize(_ node: XMLIndexer) throws -> Self {
 		let propertyAttribute: String = try node.value(ofAttribute: "id")
 
@@ -143,21 +144,20 @@ enum ExtraProperty: XMLIndexerDeserializable {
 	}
 }
 
-
-//<Beat id="0">
-//  <Dynamic>MF</Dynamic>
-//  <Rhythm ref="0" />
-//  <TransposedPitchStemOrientation>Downward</TransposedPitchStemOrientation>
-//  <ConcertPitchStemOrientation>Undefined</ConcertPitchStemOrientation>
-//  <Properties>
-//	<Property name="PrimaryPickupVolume">
-//	  <Float>0.500000</Float>
-//	</Property>
-//	<Property name="PrimaryPickupTone">
-//	  <Float>0.500000</Float>
-//	</Property>
-//  </Properties>
-//</Beat>
+// <Beat id="0">
+//   <Dynamic>MF</Dynamic>
+//   <Rhythm ref="0" />
+//   <TransposedPitchStemOrientation>Downward</TransposedPitchStemOrientation>
+//   <ConcertPitchStemOrientation>Undefined</ConcertPitchStemOrientation>
+//   <Properties>
+//	 <Property name="PrimaryPickupVolume">
+//	   <Float>0.500000</Float>
+//	 </Property>
+//	 <Property name="PrimaryPickupTone">
+//	   <Float>0.500000</Float>
+//	 </Property>
+//   </Properties>
+// </Beat>
 
 struct Beat: XMLIndexerDeserializable {
 	var id: Int

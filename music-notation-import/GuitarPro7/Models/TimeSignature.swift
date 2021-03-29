@@ -1,19 +1,19 @@
 //
 //	TimeSignature.swift
-//	mnc-import
+//	music-notation-import
 //
 //	Created by Steven Woolgar on 2021-02-23.
-//	Copyright (c) 2021, Steven Woolgar
+//	Copyright © 2021 Steven Woolgar. All rights reserved.
 //
 
 import Foundation
 import SWXMLHash
 
-//<Time>4/4</Time>
+// <Time>4/4</Time>
 //
-//<Time>7/8</Time>
+// <Time>7/8</Time>
 //
-//<Time>23/3</Time>
+// <Time>23/3</Time>
 
 enum TimeSignatureError: Error {
 	case timeSignatureParseError(String)

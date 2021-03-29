@@ -1,9 +1,9 @@
 //
 //	GuitarPro7Importer.swift
-//	mnc-import
+//	music-notation-import
 //
 //	Created by Steven Woolgar on 2020-12-02.
-//	Copyright (c) 2020, Steven Woolgar
+//	Copyright © 2020-2021 Steven Woolgar. All rights reserved.
 //
 
 import Foundation
@@ -45,7 +45,7 @@ struct GuitarPro7Importer {
 
 			var xmlData = Data()
 
-			let _ = try archive.extract(scoreEntry, consumer: { (data) in
+			_ = try archive.extract(scoreEntry, consumer: { (data) in
 				xmlData.append(data)
 			})
 
@@ -67,7 +67,7 @@ struct GuitarPro7Importer {
 		let xml = SWXMLHash.config { config in
 			config.shouldProcessLazily = options.lazy
 			config.detectParsingErrors = true
-		}.parse(xmlString);
+		}.parse(xmlString)
 
 		let interchangeFormat: GuitarProInterchangeFormat = try xml["GPIF"].value()
 		print("noteCount = \(noteCount), tieCount = \(tieCount), accentCount = \(accentCount), antiAccentCount = \(antiAccentCount), vibratoCount = \(vibratoCount), letRingCount = \(letRingCount)")

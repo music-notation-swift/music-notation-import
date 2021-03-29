@@ -1,8 +1,9 @@
 //
-//  mnc_import_tests.swift
-//  mnc-import-tests
+//	mnc_import_tests.swift
+//	music-notation-import-tests
 //
-//  Created by Steven Woolgar on 2021/02/10.
+//	Created by Steven Woolgar on 2021-02-10.
+//	Copyright © 2021 Steven Woolgar. All rights reserved.
 //
 
 import SWXMLHash
@@ -10,14 +11,14 @@ import XCTest
 
 struct SampleUserInfo {
 	enum ApiVersion {
-		case v1
-		case v2
+		case version1
+		case version2
 	}
 
-	var apiVersion = ApiVersion.v2
+	var apiVersion = ApiVersion.version2
 
 	func suffix() -> String {
-		if apiVersion == ApiVersion.v1 {
+		if apiVersion == ApiVersion.version1 {
 			return " (v1)"
 		} else {
 			return ""
@@ -52,7 +53,7 @@ struct BasicItem: XMLIndexerDeserializable {
 }
 
 extension BasicItem: Equatable {
-	static func == (a: BasicItem, b: BasicItem) -> Bool {
+	static func == (lhs: BasicItem, rhs: BasicItem) -> Bool {
 		return a.name == b.name && a.price == b.price
 	}
 }
@@ -70,7 +71,7 @@ struct AttributeItem: XMLElementDeserializable {
 }
 
 extension AttributeItem: Equatable {
-	static func == (a: AttributeItem, b: AttributeItem) -> Bool {
+	static func == (lhs: AttributeItem, lhs: AttributeItem) -> Bool {
 		return a.name == b.name && a.price == b.price
 	}
 }
@@ -93,8 +94,8 @@ struct AttributeItemStringRawRepresentable: XMLElementDeserializable {
 }
 
 extension AttributeItemStringRawRepresentable: Equatable {
-	static func == (a: AttributeItemStringRawRepresentable, b: AttributeItemStringRawRepresentable) -> Bool {
-		return a.name == b.name && a.price == b.price
+	static func == (lhs: AttributeItemStringRawRepresentable, rhs: AttributeItemStringRawRepresentable) -> Bool {
+		return lhs.name == rhs.name && lhs.price == rhs.price
 	}
 }
 
@@ -221,8 +222,8 @@ struct ComplexItem: XMLIndexerDeserializable {
 }
 
 extension ComplexItem: Equatable {
-	static func == (a: ComplexItem, b: ComplexItem) -> Bool {
-		return a.name == b.name && a.priceOptional == b.priceOptional && a.basics == b.basics && a.attrs == b.attrs
+	static func == (lhs: ComplexItem, rhs: ComplexItem) -> Bool {
+		return lhs.name == rhs.name && lhs.priceOptional == rhs.priceOptional && lhs.basics == rhs.basics && lhs.attrs == rhs.attrs
 	}
 }
 

@@ -1,8 +1,9 @@
 //
-//  main.swift
-//  mnc-import
+//	main.swift
+//	music-notation-import
 //
-//  Created by Steven Woolgar on 2021/02/01.
+//	Created by Steven Woolgar on 2021-02-01.
+//	Copyright © 2021 Steven Woolgar. All rights reserved.
 //
 
 import ArgumentParser
@@ -14,8 +15,9 @@ Currently supported music notation file types include:
 	• Guitar Pro 7 - These are zipped XML files
 """
 
+// swiftlint:disable type_name
 struct mncimport: ParsableCommand {
-	@Argument(help: argumentHelp, transform: { URL(fileURLWithPath: NSString(string: $0).expandingTildeInPath) } ) var files: [URL]
+	@Argument(help: argumentHelp, transform: { URL(fileURLWithPath: NSString(string: $0).expandingTildeInPath) }) var files: [URL]
 	@Flag(name: [.customLong("verbose"), .customShort("v")], help: "Shows verbose output.") var verbose = false
 	@Flag(name: [.customLong("lazy"), .customShort("l")], help: "Process XML lazily.") var lazy = false
 

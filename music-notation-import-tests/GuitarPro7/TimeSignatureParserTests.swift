@@ -1,8 +1,9 @@
 //
-//  TimeSignatureParserTests.swift
-//  mnc-import-tests
+//	TimeSignatureParserTests.swift
+//	music-notation-import-tests
 //
-//  Created by Steven Woolgar on 2021/02/24.
+//	Created by Steven Woolgar on 2021-02-24.
+//	Copyright © 2021 Steven Woolgar. All rights reserved.
 //
 
 import XCTest
@@ -148,13 +149,13 @@ class TimeSignatureParserTests: XCTestCase {
 	func testAdditive() {
 		do {
 			let additiveSignature = try TimeSignature.type(from: "3+2/8+3")
-			XCTAssertEqual(additiveSignature, .additive([3,2,3], 8))
+			XCTAssertEqual(additiveSignature, .additive([3, 2, 3], 8))
 		} catch {
 			XCTFail("\(error)")
 		}
 
 		do {
-			let _ = try TimeSignature.type(from: "")
+			_ = try TimeSignature.type(from: "")
 			XCTFail("We should have thrown an exception and not arrive here")
 		} catch {
 			// This is where we should end up

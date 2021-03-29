@@ -1,19 +1,19 @@
 //
 //	Key.swift
-//	mnc-import
+//	music-notation-import
 //
 //	Created by Steven Woolgar on 2021-02-10.
-//	Copyright (c) 2020-2021, Steven Woolgar
+//	Copyright © 2020-2021 Steven Woolgar. All rights reserved.
 //
 
 import Foundation
 import SWXMLHash
 
-//<Key>
-//  <AccidentalCount>4</AccidentalCount>
-//  <Mode>Major</Mode>
-//  <TransposeAs>Sharps</TransposeAs>
-//</Key>
+// <Key>
+//   <AccidentalCount>4</AccidentalCount>
+//   <Mode>Major</Mode>
+//   <TransposeAs>Sharps</TransposeAs>
+// </Key>
 
 struct Key: XMLIndexerDeserializable {
 	var accidentalCount: Int

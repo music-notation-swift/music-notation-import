@@ -1,18 +1,18 @@
 //
 //	Transpose.swift
-//	mnc-import
+//	music-notation-import
 //
 //	Created by Steven Woolgar on 2021-02-09.
-//	Copyright (c) 2020-2021, Steven Woolgar
+//	Copyright © 2020-2021 Steven Woolgar. All rights reserved.
 //
 
 import Foundation
 import SWXMLHash
 
-//<Transpose>
+// <Transpose>
 //	<Chromatic>0</Chromatic>
 //	<Octave>0</Octave>
-//</Transpose>
+// </Transpose>
 
 struct Transpose: XMLIndexerDeserializable {
 	var chromatic: Bool

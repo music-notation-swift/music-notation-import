@@ -1,0 +1,64 @@
+disabled_rules:
+  - inclusive_language
+  - todo
+
+opt_in_rules:
+  - empty_count
+  - empty_string
+  - file_header
+
+excluded:
+  - SwiftLint/Common/3rdPartyLib
+  - build
+
+line_length:
+  warning: 2000
+  error: 240
+  ignores_function_declarations: true
+  ignores_comments: true
+  ignores_urls: true
+function_body_length:
+  warning: 300
+  error: 500
+function_parameter_count:
+  warning: 6
+  error: 8
+type_body_length:
+  warning: 300
+  error: 500
+file_length:
+  warning: 1000
+  error: 1500
+  ignore_comment_only_lines: true
+
+cyclomatic_complexity:
+  warning: 22
+  error: 25
+
+identifier_name:
+  max_length:
+    warning: 40
+    error: 50
+  min_length:
+    error: 3
+  excluded:
+    - up
+    - row
+    - key
+    - id
+    - url
+    - uri
+    - URI
+    - URL
+
+reporter: "xcode"
+
+file_header:
+  required_pattern: |
+                    \/\/
+                    \/\/\t.*?\.swift
+                    \/\/\t.*?
+                    \/\/
+                    \/\/\tCreated by .*? on \d{4}-\d{2}-\d{2}\.
+                    \/\/\tCopyright © \d{4}(-\d{4})* .*?\. All rights reserved\.
+                    \/\/

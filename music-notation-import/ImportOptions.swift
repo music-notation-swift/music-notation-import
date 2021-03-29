@@ -1,9 +1,9 @@
 //
 //	ParseOptions.swift
-//	mnc-import
+//	music-notation-import
 //
 //	Created by Steven Woolgar on 2020-12-02.
-//	Copyright (c) 2020, Steven Woolgar
+//	Copyright © 2020 Steven Woolgar. All rights reserved.
 //
 
 import Foundation

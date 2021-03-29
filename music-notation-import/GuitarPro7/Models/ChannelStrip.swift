@@ -1,15 +1,15 @@
 //
 //	ChannelStrip.swift
-//	mnc-import
+//	music-notation-import
 //
 //	Created by Steven Woolgar on 2021-02-09.
-//	Copyright (c) 2020-2021, Steven Woolgar
+//	Copyright © 2020-2021 Steven Woolgar. All rights reserved.
 //
 
 import Foundation
 import SWXMLHash
 
-//<ChannelStrip version="E56">
+// <ChannelStrip version="E56">
 //  <Parameters>0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0 0.5 0.5 0.99 0.5 0.5 0.5</Parameters>
 //  <Automations>
 //	<Automation>
@@ -29,7 +29,7 @@ import SWXMLHash
 //	  <Value>0.99</Value>
 //	</Automation>
 //  </Automations>
-//</ChannelStrip>
+// </ChannelStrip>
 
 struct ChannelStrip: XMLIndexerDeserializable {
 	var parameters: String

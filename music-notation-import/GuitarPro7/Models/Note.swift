@@ -1,9 +1,9 @@
 //
 //	Note.swift
-//	mnc-import
+//	music-notation-import
 //
 //	Created by Steven Woolgar on 2021-02-09.
-//	Copyright (c) 2020-2021, Steven Woolgar
+//	Copyright © 2020-2021 Steven Woolgar. All rights reserved.
 //
 
 import Foundation
@@ -28,30 +28,29 @@ enum Vibrato: XMLIndexerDeserializable {
 	}
 }
 
-
 enum StepParseError: Error { case unsupportedStepValue(String) }
 
 //	 <Step>G</Step>
 enum Step: XMLIndexerDeserializable {
-	case a
-	case b
-	case c
-	case d
-	case e
-	case f
-	case g
+	case aPitch
+	case bPitch
+	case cPitch
+	case dPitch
+	case ePitch
+	case fPitch
+	case gPitch
 
 	static func deserialize(_ node: XMLIndexer) throws -> Self {
 		let value: String = try node.value()
 
 		switch value {
-		case "A":	return .a
-		case "B":	return .b
-		case "C":	return .c
-		case "D":	return .d
-		case "E":	return .e
-		case "F":	return .f
-		case "G":	return .g
+		case "A":	return .aPitch
+		case "B":	return .bPitch
+		case "C":	return .cPitch
+		case "D":	return .dPitch
+		case "E":	return .ePitch
+		case "F":	return .fPitch
+		case "G":	return .gPitch
 		default:
 			throw StepParseError.unsupportedStepValue(value)
 		}
@@ -105,7 +104,7 @@ struct Pitch: XMLIndexerDeserializable {
 	}
 }
 
-//<NoteProperties>
+// <NoteProperties>
 //	<Property name="ConcertPitch">
 //		<Pitch>
 //			<Step>G</Step>
@@ -128,29 +127,29 @@ struct Pitch: XMLIndexerDeserializable {
 //			<Accidental>#</Accidental>
 //			<Octave>6</Octave>
 //		</Pitch>
-//<Property name="BendDestinationOffset">
+// <Property name="BendDestinationOffset">
 //  <Float>99.000000</Float>
-//</Property>
-//<Property name="BendDestinationValue">
+// </Property>
+// <Property name="BendDestinationValue">
 //  <Float>100.000000</Float>
-//</Property>
-//<Property name="BendMiddleOffset1">
+// </Property>
+// <Property name="BendMiddleOffset1">
 //  <Float>12.000000</Float>
-//</Property>
-//<Property name="BendMiddleOffset2">
+// </Property>
+// <Property name="BendMiddleOffset2">
 //  <Float>12.000000</Float>
-//</Property>
-//<Property name="BendMiddleValue">
+// </Property>
+// <Property name="BendMiddleValue">
 //  <Float>50.000000</Float>
-//</Property>
-//<Property name="BendOriginOffset">
+// </Property>
+// <Property name="BendOriginOffset">
 //  <Float>0.000000</Float>
-//</Property>
-//<Property name="BendOriginValue">
+// </Property>
+// <Property name="BendOriginValue">
 //  <Float>0.000000</Float>
-//</Property>
-//	</Property>
-//</NoteProperties>
+// </Property>
+//    </Property>
+// </NoteProperties>
 
 enum NotePropertyParseError: Error { case unsupportedPropertyAttribute(String) }
 
@@ -184,7 +183,7 @@ enum NoteProperty: XMLIndexerDeserializable {
 		case "Fret":					return .fret(try node["Fret"].value())
 		case "Midi":					return .midi(try node["Number"].value())
 		case "String":					return .string(try node["String"].value())
- 		case "TransposedPitch":			return .transposedPitch(try node["Pitch"].value())
+		case "TransposedPitch":			return .transposedPitch(try node["Pitch"].value())
 		case "Harmonic":				return .harmonic(node["Enable"].element != nil)
 		case "HarmonicFret":			return .harmonicFret(try node["HFret"].value())
 		case "HarmonicType":			return .harmonicType(try node["HType"].value())
@@ -221,7 +220,7 @@ struct Tie: XMLIndexerDeserializable {
 	}
 }
 
-//<Note id="0">
+// <Note id="0">
 //  <Tie origin="true" destination="false" />
 //  <InstrumentArticulation>0</InstrumentArticulation>
 //  <Properties>
@@ -249,7 +248,7 @@ struct Tie: XMLIndexerDeserializable {
 //	  </Pitch>
 //	</Property>
 //  </Properties>
-//</Note>
+// </Note>
 
 var noteCount = 0
 var tieCount = 0
@@ -281,11 +280,11 @@ struct Note: XMLIndexerDeserializable {
 		)
 
 		noteCount += 1
-		if let _ = note.tie { tieCount += 1 }
-		if let _ = note.accent { accentCount += 1 }
-		if let _ = note.antiAccent { antiAccentCount += 1 }
-		if let _ = note.vibrato { vibratoCount += 1 }
-		if let _ = note.letRing { letRingCount += 1 }
+		if note.tie != nil { tieCount += 1 }
+		if note.accent != nil { accentCount += 1 }
+		if note.antiAccent != nil { antiAccentCount += 1 }
+		if note.vibrato != nil { vibratoCount += 1 }
+		if note.letRing != nil { letRingCount += 1 }
 
 		assert(!(node.children.count == 3 && note.tie == nil && note.vibrato == nil && note.accent == nil && note.antiAccent == nil && note.letRing == nil),
 				 "unhandled child")
