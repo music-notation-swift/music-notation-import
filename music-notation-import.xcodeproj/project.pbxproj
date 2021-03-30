@@ -13,6 +13,7 @@
 		E2C66260260BC2F7003A5291 /* SWXMLHash in Frameworks */ = {isa = PBXBuildFile; productRef = E2C6625F260BC2F7003A5291 /* SWXMLHash */; };
 		E2C66262260BE88B003A5291 /* SWXMLHash in Frameworks */ = {isa = PBXBuildFile; productRef = E2C66261260BE88B003A5291 /* SWXMLHash */; };
 		E2C662672612AC3D003A5291 /* MusicNotationImportGuitarPro in Frameworks */ = {isa = PBXBuildFile; productRef = E2C662662612AC3D003A5291 /* MusicNotationImportGuitarPro */; };
+		E2C662692612AF74003A5291 /* GuitarPro7Importer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C662682612AF74003A5291 /* GuitarPro7Importer.swift */; };
 		E2DB7E7625C86E0700F7395D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB7E7525C86E0700F7395D /* main.swift */; };
 		E2DB7E8425C87C7600F7395D /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = E2DB7E8325C87C7600F7395D /* ArgumentParser */; };
 		E2DB7E8925C87E5500F7395D /* URL+File.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB7E8725C87E5500F7395D /* URL+File.swift */; };
@@ -46,6 +47,7 @@
 		E223659D25D4CC2500258DD5 /* music-notation-import-tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "music-notation-import-tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E223659F25D4CC2500258DD5 /* mnc_import_tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mnc_import_tests.swift; sourceTree = "<group>"; };
 		E22365A125D4CC2500258DD5 /* Info.plist */ = {isa = PBXFileReference; explicitFileType = text.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2C662682612AF74003A5291 /* GuitarPro7Importer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuitarPro7Importer.swift; sourceTree = "<group>"; };
 		E2DB7E7225C86E0700F7395D /* music-notation-import */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "music-notation-import"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2DB7E7525C86E0700F7395D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		E2DB7E8725C87E5500F7395D /* URL+File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+File.swift"; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			children = (
 				E2DB7E8625C87E2D00F7395D /* Utilities */,
 				E2DB7E8C25C87ECC00F7395D /* ImportOptions.swift */,
+				E2C662682612AF74003A5291 /* GuitarPro7Importer.swift */,
 				E2DB7E7525C86E0700F7395D /* main.swift */,
 			);
 			path = "music-notation-import";
@@ -188,7 +191,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1250;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					E223659C25D4CC2500258DD5 = {
 						CreatedOnToolsVersion = 12.5;
@@ -290,6 +293,7 @@
 				E2DB7E7625C86E0700F7395D /* main.swift in Sources */,
 				E2DB7E8A25C87E5500F7395D /* FileManager+Exists.swift in Sources */,
 				E2DB7E8925C87E5500F7395D /* URL+File.swift in Sources */,
+				E2C662692612AF74003A5291 /* GuitarPro7Importer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +462,7 @@
 		E2DB7E7A25C86E0700F7395D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T8F2X3K4US;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -469,6 +474,7 @@
 		E2DB7E7B25C86E0700F7395D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T8F2X3K4US;
 				ENABLE_HARDENED_RUNTIME = YES;
