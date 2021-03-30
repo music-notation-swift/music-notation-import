@@ -529,7 +529,7 @@
 			repositoryURL = "https://github.com/music-notation-swift/music-notation.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.2.4;
+				minimumVersion = 0.2.5;
 			};
 		};
 		E2C6625E260BC2F7003A5291 /* XCRemoteSwiftPackageReference "SWXMLHash" */ = {
