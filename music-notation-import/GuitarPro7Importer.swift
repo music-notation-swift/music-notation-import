@@ -71,7 +71,7 @@ struct GuitarPro7Importer {
 		}.parse(xmlString)
 
 		let interchangeFormat: GuitarProInterchangeFormat = try xml["GPIF"].value()
-//		print("noteCount = \(noteCount), tieCount = \(tieCount), accentCount = \(accentCount), antiAccentCount = \(antiAccentCount), vibratoCount = \(vibratoCount), letRingCount = \(letRingCount)")
+		print("noteCount = \(noteCount), tieCount = \(tieCount), accentCount = \(accentCount), antiAccentCount = \(antiAccentCount), vibratoCount = \(vibratoCount), letRingCount = \(letRingCount)")
 
 		return interchangeFormat
 	}
