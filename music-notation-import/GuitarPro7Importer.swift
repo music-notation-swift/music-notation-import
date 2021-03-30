@@ -64,18 +64,18 @@ struct GuitarPro7Importer {
 		return MusicNotation.Score(staves: [staff])
 	}
 
-	func parseXML(_ xmlString: String) throws -> GuitarProInterchangeFormat {
+	func parseXML(_ xmlString: String) throws -> MusicNotationImportGuitarPro.GuitarProInterchangeFormat {
 		let xml = SWXMLHash.config { config in
 			config.shouldProcessLazily = options.lazy
 			config.detectParsingErrors = true
 		}.parse(xmlString)
 
-		let interchangeFormat: GuitarProInterchangeFormat = try xml["GPIF"].value()
+		let interchangeFormat: MusicNotationImportGuitarPro.GuitarProInterchangeFormat = try xml["GPIF"].value()
 		print("noteCount = \(noteCount), tieCount = \(tieCount), accentCount = \(accentCount), antiAccentCount = \(antiAccentCount), vibratoCount = \(vibratoCount), letRingCount = \(letRingCount)")
 
 		return interchangeFormat
 	}
 
-	func createNotation(with interchangeFormat: GuitarProInterchangeFormat) throws {
+	func createNotation(with interchangeFormat: MusicNotationImportGuitarPro.GuitarProInterchangeFormat) throws {
 	}
 }
