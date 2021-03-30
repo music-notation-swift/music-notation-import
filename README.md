@@ -12,7 +12,7 @@ Import various music notation file formats into [music-notation](https://github.
 
 ## Supported Formats
 
-- [music-notation-import-guitarpro](https://github.com/music-notation-swift/music-notation-import-guitarpro).
+- [Guitar Pro 7 Files](https://github.com/music-notation-swift/music-notation-import-guitarpro).
 
 ## Dependencies
 
