@@ -1,0 +1,52 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "music-notation",
+        "repositoryURL": "https://github.com/music-notation-swift/music-notation.git",
+        "state": {
+          "branch": null,
+          "revision": "53cfb800ac457ef9a6586c2ca77c8518172e493e",
+          "version": "0.2.5"
+        }
+      },
+      {
+        "package": "music-notation-import-guitarpro",
+        "repositoryURL": "https://github.com/music-notation-swift/music-notation-import-guitarpro.git",
+        "state": {
+          "branch": null,
+          "revision": "9e104b8669bfabaae73a363141f190bc2294c8d9",
+          "version": "0.5.0"
+        }
+      },
+      {
+        "package": "swift-argument-parser",
+        "repositoryURL": "https://github.com/apple/swift-argument-parser.git",
+        "state": {
+          "branch": null,
+          "revision": "831ed5e860a70e745bc1337830af4786b2576881",
+          "version": "0.4.1"
+        }
+      },
+      {
+        "package": "SWXMLHash",
+        "repositoryURL": "https://github.com/drmohundro/SWXMLHash.git",
+        "state": {
+          "branch": null,
+          "revision": "9183170d20857753d4f331b0ca63f73c60764bf3",
+          "version": "5.0.2"
+        }
+      },
+      {
+        "package": "ZIPFoundation",
+        "repositoryURL": "https://github.com/weichsel/ZIPFoundation.git",
+        "state": {
+          "branch": null,
+          "revision": "cf10bbff6ac3b873e97b36b9784c79866a051a8e",
+          "version": "0.9.12"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
