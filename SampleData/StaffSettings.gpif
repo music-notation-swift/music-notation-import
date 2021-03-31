@@ -1,0 +1,1522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GPIF>
+	<GPVersion>7</GPVersion>
+	<GPRevision required="12021" recommended="12023">12025</GPRevision>
+
+	<Encoding>
+		<EncodingDescription>GP7</EncodingDescription>
+	</Encoding>
+
+	<Score>
+		<Title><![CDATA[TitleString]]></Title>
+		<SubTitle><![CDATA[SubTitleString]]></SubTitle>
+		<Artist><![CDATA[ArtistString]]></Artist>
+		<Album><![CDATA[AlbumString]]></Album>
+		<Words><![CDATA[WordsString]]></Words>
+		<Music><![CDATA[MusicString]]></Music>
+		<WordsAndMusic><![CDATA[]]></WordsAndMusic>
+		<Copyright><![CDATA[CopyrightString]]></Copyright>
+		<Tabber><![CDATA[TranscriberString]]></Tabber>
+		<Instructions><![CDATA[InstructionsString]]></Instructions>
+		<Notices><![CDATA[NoticeString]]></Notices>
+		<FirstPageHeader><![CDATA[<html><head><meta name="qrichtext" content="1" /><style type="text/css">p, li { white-space: pre-wrap; }</style></head><body style=" font-family:'Times New Roman'; font-size:16pt; font-weight:400; font-style:normal;"><p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;"><span style=" font-family:'Times New Roman'; font-size:35pt;">%TITLE%</span></p><p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;"><span style=" font-family:'Times New Roman'; font-size:16pt;">%SUBTITLE%</span></p><p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;"><span style=" font-family:'Times New Roman'; font-size:16pt;">%ARTIST%</span></p><p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;"><span style=" font-family:'Times New Roman'; font-size:16pt;">%ALBUM%</span></p><p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans Serif'; font-size:10pt;"><span style=" font-family:'Times New Roman'; font-size:12pt;">%WORDS&MUSIC%</span></p></body></html>]]></FirstPageHeader>
+		<FirstPageFooter><![CDATA[<html><head><meta name="qrichtext" content="1" /><style type="text/css">p, li { white-space: pre-wrap; }</style></head><body style=" font-family:'Lucida Grande'; font-size:13pt; font-weight:400; font-style:normal;"><p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Times'; font-size:14pt;">Page %page%/%pages%</p></body></html>]]></FirstPageFooter>
+		<PageHeader><![CDATA[]]></PageHeader>
+		<PageFooter><![CDATA[<html><head><meta name="qrichtext" content="1" /><style type="text/css">p, li { white-space: pre-wrap; }</style></head><body style=" font-family:'Lucida Grande'; font-size:13pt; font-weight:400; font-style:normal;"><p align="right" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Times'; font-size:14pt;">Page %page%/%pages%</p></body></html>]]></PageFooter>
+		<ScoreSystemsDefaultLayout>4</ScoreSystemsDefaultLayout>
+		<ScoreSystemsLayout>4</ScoreSystemsLayout>
+		<ScoreZoomPolicy>Value</ScoreZoomPolicy>
+		<ScoreZoom>1</ScoreZoom>
+		<MultiVoice>0></MultiVoice>
+	</Score>
+
+	<MasterTrack>
+		<Tracks>0 1 2 3 4 5 6</Tracks>
+		<Automations>
+			<Automation>
+				<Type>Tempo</Type>
+				<Linear>false</Linear>
+				<Bar>0</Bar>
+				<Position>0</Position>
+				<Visible>true</Visible>
+				<Value>120 2</Value>
+			</Automation>
+		</Automations>
+		<RSE>
+			<Master>
+				<Effect id="M06_DynamicAnalogDynamic">
+					<ByPass />
+					<Parameters>0 0 0.8 0 0.4 0.6 0.5 0.5</Parameters>
+				</Effect>
+				<Effect id="M03_StudioReverbRoomStudioA">
+					<ByPass />
+					<Parameters>0 0 0 0 0</Parameters>
+				</Effect>
+				<Effect id="M08_GraphicEQ10Band">
+					<ByPass />
+					<Parameters>0 0 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5</Parameters>
+				</Effect>
+				<Effect id="I01_VolumeAndPan">
+					<Parameters>0.76 0.5</Parameters>
+				</Effect>
+			</Master>
+		</RSE>
+	</MasterTrack>
+
+	<AudioTracks>
+	</AudioTracks>
+
+	<!--SingleStaff Track-->
+
+	<Tracks>
+		<Track id="0">
+			<Name><![CDATA[SingleStaff]]></Name>
+			<ShortName><![CDATA[pno.]]></ShortName>
+			<Color>234 188 124</Color>
+			<SystemsDefautLayout>3</SystemsDefautLayout>
+			<SystemsLayout>1</SystemsLayout>
+
+			<PalmMute>0</PalmMute>
+			<PlayingStyle>Default</PlayingStyle>
+			<IconId>10</IconId>
+
+			<InstrumentSet>
+				<Name>Acoustic Piano</Name>
+				<Type>acousticPiano</Type>
+				<LineCount>5</LineCount>
+				<Elements>
+					<Element>
+						<Name>Pitched</Name>
+						<Type>pitched</Type>
+						<SoundbankName></SoundbankName>
+						<Articulations>
+							<Articulation>
+								<Name></Name>
+								<StaffLine>0</StaffLine>
+								<Noteheads>noteheadBlack noteheadHalf noteheadWhole</Noteheads>
+								<TechniquePlacement>outside</TechniquePlacement>
+								<TechniqueSymbol></TechniqueSymbol>
+								<InputMidiNumbers></InputMidiNumbers>
+								<OutputRSESound></OutputRSESound>
+								<OutputMidiNumber>0</OutputMidiNumber>
+							</Articulation>
+						</Articulations>
+					</Element>
+				</Elements>
+			</InstrumentSet>
+
+			<Transpose>
+				<Chromatic>0</Chromatic>
+				<Octave>0</Octave>
+			</Transpose>
+
+			<RSE>
+				<ChannelStrip version="E56">
+				<Parameters>0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 1 0.5 0.5 0.795 0.5 0.5 0.5</Parameters>
+				</ChannelStrip>
+			</RSE>
+	
+			<ForcedSound>-1</ForcedSound>
+			<Sounds>
+				<Sound>
+					<Name><![CDATA[Acoustic Piano]]></Name>
+					<Label><![CDATA[Acoustic Piano]]></Label>
+					<Path>Orchestra/Keyboard/Acoustic Piano</Path>
+					<Role>Factory</Role>
+					<MIDI>
+						<LSB>0</LSB>
+						<MSB>0</MSB>
+						<Program>0</Program>
+					</MIDI>
+					<RSE>
+						<SoundbankPatch>German-APiano</SoundbankPatch>
+						<Pickups>
+							<OverloudPosition>0</OverloudPosition>
+							<Volumes>1 1</Volumes>
+							<Tones>1 1</Tones>
+						</Pickups>
+						<EffectChain>
+							<Effect id="M08_GraphicEQ10Band">
+								<Parameters>1 0 0.75 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5</Parameters>
+							</Effect>
+							<Effect />
+							<Effect />
+							<Effect />
+							<Effect />
+							<Effect />
+						</EffectChain>
+					</RSE>
+				</Sound>
+			</Sounds>
+	
+			<MidiConnection>
+				<Port>0</Port>
+				<PrimaryChannel>0</PrimaryChannel>
+				<SecondaryChannel>1</SecondaryChannel>
+				<ForeOneChannelPerString>false</ForeOneChannelPerString>
+			</MidiConnection>
+
+			<PlaybackState>Default</PlaybackState>
+			<AudioEngineState>RSE</AudioEngineState>
+	
+			<Lyrics dispatched="true">
+				<Line>
+				<Text><![CDATA[]]></Text>
+				<Offset>0</Offset>
+				</Line>
+				<Line>
+				<Text><![CDATA[]]></Text>
+				<Offset>0</Offset>
+				</Line>
+				<Line>
+				<Text><![CDATA[]]></Text>
+				<Offset>0</Offset>
+				</Line>
+				<Line>
+				<Text><![CDATA[]]></Text>
+				<Offset>0</Offset>
+				</Line>
+				<Line>
+				<Text><![CDATA[]]></Text>
+				<Offset>0</Offset>
+				</Line>
+			</Lyrics>
+
+			<Staves>
+				<Staff>
+					<Properties>
+						<Property name="CapoFret">
+							<Fret>0</Fret>
+						</Property>
+						<Property name="FretCount">
+							<Number>24</Number>
+						</Property>
+						<Property name="PartialCapoFret">
+							<Fret>0</Fret>
+						</Property>
+						<Property name="PartialCapoStringFlags">
+							<Bitset>000000</Bitset>
+						</Property>
+						<Property name="Tuning">
+							<Pitches>40 45 50 55 59 64</Pitches>
+							<Flat></Flat>
+							<Instrument>Guitar</Instrument>
+							<Label><![CDATA[]]></Label>
+							<LabelVisible>true</LabelVisible>
+						</Property>
+						<Property name="ChordCollection">
+							<Items/>
+						</Property>
+						<Property name="ChordWorkingSet">
+							<Items/>
+						</Property>
+						<Property name="DiagramCollection">
+							<Items/>
+						</Property>
+						<Property name="DiagramWorkingSet">
+							<Items/>
+						</Property>
+						<Property name="TuningFlat">
+							<Enable />
+						</Property>
+						<Name><![CDATA[Standard]]></Name>
+					</Properties>
+				</Staff>
+			</Staves>
+
+			<Automations>
+				<Automation>
+					<Type>Sound</Type>
+					<Linear>false</Linear>
+					<Bar>0</Bar>
+					<Position>0</Position>
+					<Visible>true</Visible>
+					<Value><![CDATA[Orchestra/Keyboard/Acoustic Piano;Acoustic Piano;Factory]]></Value>
+				</Automation>
+			</Automations>
+		</Track>
+
+		<!--GrandStaff Track-->
+
+		<Track id="1">
+			<Name><![CDATA[GrandStaff]]></Name>
+			<ShortName><![CDATA[pno.]]></ShortName>
+			<Color>234 188 124</Color>
+			<SystemsDefautLayout>3</SystemsDefautLayout>
+			<SystemsLayout>1</SystemsLayout>
+			<PalmMute>0</PalmMute>
+			<PlayingStyle>Default</PlayingStyle>
+			<IconId>10</IconId>
+
+			<InstrumentSet>
+				<Name>Acoustic Piano</Name>
+				<Type>acousticPiano</Type>
+				<LineCount>5</LineCount>
+				<Elements>
+					<Element>
+						<Name>Pitched</Name>
+						<Type>pitched</Type>
+						<SoundbankName></SoundbankName>
+						<Articulations>
+							<Articulation>
+								<Name></Name>
+								<StaffLine>0</StaffLine>
+								<Noteheads>noteheadBlack noteheadHalf noteheadWhole</Noteheads>
+								<TechniquePlacement>outside</TechniquePlacement>
+								<TechniqueSymbol></TechniqueSymbol>
+								<InputMidiNumbers></InputMidiNumbers>
+								<OutputRSESound></OutputRSESound>
+								<OutputMidiNumber>0</OutputMidiNumber>
+							</Articulation>
+						</Articulations>
+					</Element>
+				</Elements>
+			</InstrumentSet>
+
+			<Transpose>
+				<Chromatic>0</Chromatic>
+				<Octave>0</Octave>
+			</Transpose>
+
+			<RSE>
+				<ChannelStrip version="E56">
+				<Parameters>0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 1 0.5 0.5 0.795 0.5 0.5 0.5</Parameters>
+				</ChannelStrip>
+			</RSE>
+
+			<ForcedSound>-1</ForcedSound>
+
+			<Sounds>
+				<Sound>
+					<Name><![CDATA[Acoustic Piano]]></Name>
+					<Label><![CDATA[Acoustic Piano]]></Label>
+					<Path>Orchestra/Keyboard/Acoustic Piano</Path>
+					<Role>Factory</Role>
+					<MIDI>
+						<LSB>0</LSB>
+						<MSB>0</MSB>
+						<Program>0</Program>
+					</MIDI>
+					<RSE>
+						<SoundbankPatch>German-APiano</SoundbankPatch>
+						<Pickups>
+							<OverloudPosition>0</OverloudPosition>
+							<Volumes>1 1</Volumes>
+							<Tones>1 1</Tones>
+						</Pickups>
+						<EffectChain>
+							<Effect id="M08_GraphicEQ10Band">
+								<Parameters>1 0 0.75 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5</Parameters>
+							</Effect>
+							<Effect />
+							<Effect />
+							<Effect />
+							<Effect />
+							<Effect />
+						</EffectChain>
+					</RSE>
+				</Sound>
+			</Sounds>
+
+			<MidiConnection>
+				<Port>0</Port>
+				<PrimaryChannel>2</PrimaryChannel>
+				<SecondaryChannel>3</SecondaryChannel>
+				<ForeOneChannelPerString>false</ForeOneChannelPerString>
+			</MidiConnection>
+
+			<PlaybackState>Default</PlaybackState>
+			<AudioEngineState>RSE</AudioEngineState>
+
+			<Lyrics dispatched="true">
+				<Line>
+				<Text><![CDATA[]]></Text>
+				<Offset>0</Offset>
+				</Line>
+				<Line>
+				<Text><![CDATA[]]></Text>
+				<Offset>0</Offset>
+				</Line>
+				<Line>
+				<Text><![CDATA[]]></Text>
+				<Offset>0</Offset>
+				</Line>
+				<Line>
+				<Text><![CDATA[]]></Text>
+				<Offset>0</Offset>
+				</Line>
+				<Line>
+				<Text><![CDATA[]]></Text>
+				<Offset>0</Offset>
+				</Line>
+			</Lyrics>
+	
+			<Staves>
+				<Staff>
+					<Properties>
+						<Property name="CapoFret">
+							<Fret>0</Fret>
+						</Property>
+						<Property name="FretCount">
+							<Number>24</Number>
+						</Property>
+						<Property name="PartialCapoFret">
+							<Fret>0</Fret>
+						</Property>
+						<Property name="PartialCapoStringFlags">
+							<Bitset>000000</Bitset>
+						</Property>
+						<Property name="Tuning">
+							<Pitches>40 45 50 55 59 64</Pitches>
+							<Flat></Flat>
+							<Instrument>Guitar</Instrument>
+							<Label><![CDATA[]]></Label>
+							<LabelVisible>true</LabelVisible>
+						</Property>
+						<Property name="ChordCollection">
+							<Items/>
+						</Property>
+						<Property name="ChordWorkingSet">
+							<Items/>
+						</Property>
+						<Property name="DiagramCollection">
+							<Items/>
+						</Property>
+						<Property name="DiagramWorkingSet">
+							<Items/>
+						</Property>
+						<Property name="TuningFlat">
+							<Enable />
+						</Property>
+						<Name><![CDATA[Standard]]></Name>
+					</Properties>
+				</Staff>
+
+				<Staff>
+					<Properties>
+						<Property name="CapoFret">
+							<Fret>0</Fret>
+						</Property>
+						<Property name="FretCount">
+							<Number>24</Number>
+						</Property>
+						<Property name="PartialCapoFret">
+							<Fret>0</Fret>
+						</Property>
+						<Property name="PartialCapoStringFlags">
+							<Bitset>00000</Bitset>
+						</Property>
+						<Property name="Tuning">
+							<Pitches>23 28 33 38 43</Pitches>
+							<Instrument>Bass</Instrument>
+							<Label><![CDATA[]]></Label>
+							<LabelVisible>true</LabelVisible>
+						</Property>
+						<Property name="ChordCollection">
+							<Items/>
+						</Property>
+						<Property name="ChordWorkingSet">
+							<Items/>
+						</Property>
+						<Property name="DiagramCollection">
+							<Items/>
+						</Property>
+						<Property name="DiagramWorkingSet">
+							<Items/>
+						</Property>
+						<Name><![CDATA[Standard]]></Name>
+					</Properties>
+				</Staff>
+			</Staves>
+
+			<Automations>
+				<Automation>
+					<Type>Sound</Type>
+					<Linear>false</Linear>
+					<Bar>0</Bar>
+					<Position>0</Position>
+					<Visible>true</Visible>
+					<Value><![CDATA[Orchestra/Keyboard/Acoustic Piano;Acoustic Piano;Factory]]></Value>
+				</Automation>
+			</Automations>
+		</Track>
+
+		<!--SingleStaff+Tab Track-->
+
+		<Track id="2">
+			<Name><![CDATA[SingleStaff+Tab]]></Name>
+			<ShortName><![CDATA[pno.]]></ShortName>
+			<Color>234 188 124</Color>
+			<SystemsDefautLayout>3</SystemsDefautLayout>
+			<SystemsLayout>1</SystemsLayout>
+			<PalmMute>0</PalmMute>
+			<PlayingStyle>Default</PlayingStyle>
+			<IconId>10</IconId>
+
+			<InstrumentSet>
+				<Name>Acoustic Piano</Name>
+				<Type>acousticPiano</Type>
+				<LineCount>5</LineCount>
+				<Elements>
+				<Element>
+				<Name>Pitched</Name>
+				<Type>pitched</Type>
+				<SoundbankName></SoundbankName>
+				<Articulations>
+				<Articulation>
+				<Name></Name>
+				<StaffLine>0</StaffLine>
+				<Noteheads>noteheadBlack noteheadHalf noteheadWhole</Noteheads>
+				<TechniquePlacement>outside</TechniquePlacement>
+				<TechniqueSymbol></TechniqueSymbol>
+				<InputMidiNumbers></InputMidiNumbers>
+				<OutputRSESound></OutputRSESound>
+				<OutputMidiNumber>0</OutputMidiNumber>
+				</Articulation>
+				</Articulations>
+				</Element>
+				</Elements>
+			</InstrumentSet>
+
+			<Transpose>
+				<Chromatic>0</Chromatic>
+				<Octave>0</Octave>
+			</Transpose>
+
+			<RSE>
+				<ChannelStrip version="E56">
+					<Parameters>0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 1 0.5 0.5 0.795 0.5 0.5 0.5</Parameters>
+				</ChannelStrip>
+			</RSE>
+
+			<ForcedSound>-1</ForcedSound>
+
+			<Sounds>
+				<Sound>
+					<Name><![CDATA[Acoustic Piano]]></Name>
+					<Label><![CDATA[Acoustic Piano]]></Label>
+					<Path>Orchestra/Keyboard/Acoustic Piano</Path>
+					<Role>Factory</Role>
+					<MIDI>
+					<LSB>0</LSB>
+					<MSB>0</MSB>
+					<Program>0</Program>
+					</MIDI>
+					<RSE>
+						<SoundbankPatch>German-APiano</SoundbankPatch>
+						<Pickups>
+							<OverloudPosition>0</OverloudPosition>
+							<Volumes>1 1</Volumes>
+							<Tones>1 1</Tones>
+						</Pickups>
+						<EffectChain>
+							<Effect id="M08_GraphicEQ10Band">
+								<Parameters>1 0 0.75 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5</Parameters>
+							</Effect>
+							<Effect />
+							<Effect />
+							<Effect />
+							<Effect />
+							<Effect />
+						</EffectChain>
+					</RSE>
+				</Sound>
+			</Sounds>
+
+			<MidiConnection>
+				<Port>0</Port>
+				<PrimaryChannel>4</PrimaryChannel>
+				<SecondaryChannel>5</SecondaryChannel>
+				<ForeOneChannelPerString>false</ForeOneChannelPerString>
+			</MidiConnection>
+
+			<PlaybackState>Default</PlaybackState>
+			<AudioEngineState>RSE</AudioEngineState>
+			<Lyrics dispatched="true">
+				<Line>
+					<Text><![CDATA[]]></Text>
+					<Offset>0</Offset>
+				</Line>
+				<Line>
+					<Text><![CDATA[]]></Text>
+				<Offset>0</Offset>
+				</Line>
+				<Line>
+					<Text><![CDATA[]]></Text>
+					<Offset>0</Offset>
+				</Line>
+					<Line>
+					<Text><![CDATA[]]></Text>
+					<Offset>0</Offset>
+				</Line>
+				<Line>
+					<Text><![CDATA[]]></Text>
+					<Offset>0</Offset>
+				</Line>
+			</Lyrics>
+
+			<Staves>
+				<Staff>
+					<Properties>
+						<Property name="CapoFret">
+							<Fret>0</Fret>
+						</Property>
+						<Property name="FretCount">
+							<Number>24</Number>
+						</Property>
+						<Property name="PartialCapoFret">
+							<Fret>0</Fret>
+						</Property>
+						<Property name="PartialCapoStringFlags">
+							<Bitset>000000</Bitset>
+						</Property>
+						<Property name="Tuning">
+							<Pitches>40 45 50 55 59 64</Pitches>
+							<Flat></Flat>
+							<Instrument>Guitar</Instrument>
+							<Label><![CDATA[]]></Label>
+							<LabelVisible>true</LabelVisible>
+						</Property>
+						<Property name="ChordCollection">
+							<Items/>
+						</Property>
+						<Property name="ChordWorkingSet">
+							<Items/>
+						</Property>
+						<Property name="DiagramCollection">
+							<Items/>
+						</Property>
+						<Property name="DiagramWorkingSet">
+							<Items/>
+						</Property>
+						<Property name="TuningFlat">
+							<Enable />
+						</Property>
+						<Name><![CDATA[Standard]]></Name>
+					</Properties>
+				</Staff>
+			</Staves>
+
+			<Automations>
+				<Automation>
+					<Type>Sound</Type>
+					<Linear>false</Linear>
+					<Bar>0</Bar>
+					<Position>0</Position>
+					<Visible>true</Visible>
+					<Value><![CDATA[Orchestra/Keyboard/Acoustic Piano;Acoustic Piano;Factory]]></Value>
+				</Automation>
+			</Automations>
+		</Track>
+
+		<!--Slash+SingleStaff+Tab Track-->
+
+		<Track id="3">
+			<Name><![CDATA[Slash+SingleStaff+Tab]]></Name>
+			<ShortName><![CDATA[pno.]]></ShortName>
+			<Color>234 188 124</Color>
+			<SystemsDefautLayout>3</SystemsDefautLayout>
+			<SystemsLayout>1</SystemsLayout>
+			<PalmMute>0</PalmMute>
+			<PlayingStyle>Default</PlayingStyle>
+			<IconId>10</IconId>
+
+			<InstrumentSet>
+				<Name>Acoustic Piano</Name>
+				<Type>acousticPiano</Type>
+				<LineCount>5</LineCount>
+				<Elements>
+				<Element>
+				<Name>Pitched</Name>
+				<Type>pitched</Type>
+				<SoundbankName></SoundbankName>
+				<Articulations>
+				<Articulation>
+				<Name></Name>
+				<StaffLine>0</StaffLine>
+				<Noteheads>noteheadBlack noteheadHalf noteheadWhole</Noteheads>
+				<TechniquePlacement>outside</TechniquePlacement>
+				<TechniqueSymbol></TechniqueSymbol>
+				<InputMidiNumbers></InputMidiNumbers>
+				<OutputRSESound></OutputRSESound>
+				<OutputMidiNumber>0</OutputMidiNumber>
+				</Articulation>
+				</Articulations>
+				</Element>
+				</Elements>
+			</InstrumentSet>
+
+			<Transpose>
+				<Chromatic>0</Chromatic>
+				<Octave>0</Octave>
+			</Transpose>
+
+			<RSE>
+				<ChannelStrip version="E56">
+					<Parameters>0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 1 0.5 0.5 0.795 0.5 0.5 0.5</Parameters>
+				</ChannelStrip>
+			</RSE>
+	
+			<ForcedSound>-1</ForcedSound>
+			<Sounds>
+				<Sound>
+					<Name><![CDATA[Acoustic Piano]]></Name>
+					<Label><![CDATA[Acoustic Piano]]></Label>
+					<Path>Orchestra/Keyboard/Acoustic Piano</Path>
+					<Role>Factory</Role>
+					<MIDI>
+						<LSB>0</LSB>
+						<MSB>0</MSB>
+						<Program>0</Program>
+					</MIDI>
+
+					<RSE>
+						<SoundbankPatch>German-APiano</SoundbankPatch>
+						<Pickups>
+						<OverloudPosition>0</OverloudPosition>
+						<Volumes>1 1</Volumes>
+						<Tones>1 1</Tones>
+						</Pickups>
+						<EffectChain>
+						<Effect id="M08_GraphicEQ10Band">
+						<Parameters>1 0 0.75 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5</Parameters>
+						</Effect>
+						<Effect />
+						<Effect />
+						<Effect />
+						<Effect />
+						<Effect />
+						</EffectChain>
+					</RSE>
+				</Sound>
+			</Sounds>
+
+			<MidiConnection>
+				<Port>0</Port>
+				<PrimaryChannel>6</PrimaryChannel>
+				<SecondaryChannel>7</SecondaryChannel>
+				<ForeOneChannelPerString>false</ForeOneChannelPerString>
+			</MidiConnection>
+
+			<PlaybackState>Default</PlaybackState>
+			<AudioEngineState>RSE</AudioEngineState>
+
+			<Lyrics dispatched="true">
+				<Line>
+					<Text><![CDATA[]]></Text>
+					<Offset>0</Offset>
+				</Line>
+				<Line>
+					<Text><![CDATA[]]></Text>
+					<Offset>0</Offset>
+				</Line>
+				<Line>
+					<Text><![CDATA[]]></Text>
+					<Offset>0</Offset>
+				</Line>
+				<Line>
+					<Text><![CDATA[]]></Text>
+					<Offset>0</Offset>
+				</Line>
+				<Line>
+					<Text><![CDATA[]]></Text>
+					<Offset>0</Offset>
+				</Line>
+			</Lyrics>
+
+			<Staves>
+				<Staff>
+					<Properties>
+						<Property name="CapoFret">
+							<Fret>0</Fret>
+						</Property>
+						<Property name="FretCount">
+							<Number>24</Number>
+						</Property>
+						<Property name="PartialCapoFret">
+							<Fret>0</Fret>
+						</Property>
+						<Property name="PartialCapoStringFlags">
+							<Bitset>000000</Bitset>
+						</Property>
+						<Property name="Tuning">
+							<Pitches>40 45 50 55 59 64</Pitches>
+							<Flat></Flat>
+							<Instrument>Guitar</Instrument>
+							<Label><![CDATA[]]></Label>
+							<LabelVisible>true</LabelVisible>
+						</Property>
+						<Property name="ChordCollection">
+							<Items/>
+						</Property>
+						<Property name="ChordWorkingSet">
+							<Items/>
+						</Property>
+						<Property name="DiagramCollection">
+							<Items/>
+						</Property>
+						<Property name="DiagramWorkingSet">
+							<Items/>
+						</Property>
+						<Property name="TuningFlat">
+							<Enable />
+						</Property>
+						<Name><![CDATA[Standard]]></Name>
+					</Properties>
+				</Staff>
+			</Staves>
+
+			<Automations>
+				<Automation>
+					<Type>Sound</Type>
+					<Linear>false</Linear>
+					<Bar>0</Bar>
+					<Position>0</Position>
+					<Visible>true</Visible>
+					<Value><![CDATA[Orchestra/Keyboard/Acoustic Piano;Acoustic Piano;Factory]]></Value>
+				</Automation>
+			</Automations>
+		</Track>
+
+		<!--SingleStaff+Trans2 Track-->
+		<!--Transposition: C Played as D (int: +2)-->
+		<!--Transposition: Octave: Same Octave-->
+
+		<Track id="4">
+			<Name><![CDATA[SingleStaff+Trans2]]></Name>
+			<ShortName><![CDATA[pno.]]></ShortName>
+			<Color>234 188 124</Color>
+			<SystemsDefautLayout>3</SystemsDefautLayout>
+			<SystemsLayout>1</SystemsLayout>
+			<PalmMute>0</PalmMute>
+			<PlayingStyle>Default</PlayingStyle>
+			<IconId>10</IconId>
+			<InstrumentSet>
+			<Name>Acoustic Piano</Name>
+			<Type>acousticPiano</Type>
+			<LineCount>5</LineCount>
+			<Elements>
+			<Element>
+			<Name>Pitched</Name>
+			<Type>pitched</Type>
+			<SoundbankName></SoundbankName>
+			<Articulations>
+			<Articulation>
+			<Name></Name>
+			<StaffLine>0</StaffLine>
+			<Noteheads>noteheadBlack noteheadHalf noteheadWhole</Noteheads>
+			<TechniquePlacement>outside</TechniquePlacement>
+			<TechniqueSymbol></TechniqueSymbol>
+			<InputMidiNumbers></InputMidiNumbers>
+			<OutputRSESound></OutputRSESound>
+			<OutputMidiNumber>0</OutputMidiNumber>
+			</Articulation>
+			</Articulations>
+			</Element>
+			</Elements>
+			</InstrumentSet>
+			<Transpose>
+			<Chromatic>2</Chromatic>
+			<Octave>0</Octave>
+			</Transpose>
+			<RSE>
+			<ChannelStrip version="E56">
+			<Parameters>0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 1 0.5 0.5 0.795 0.5 0.5 0.5</Parameters>
+			</ChannelStrip>
+			</RSE>
+			<ForcedSound>-1</ForcedSound>
+			<Sounds>
+			<Sound>
+			<Name><![CDATA[Acoustic Piano]]></Name>
+			<Label><![CDATA[Acoustic Piano]]></Label>
+			<Path>Orchestra/Keyboard/Acoustic Piano</Path>
+			<Role>Factory</Role>
+			<MIDI>
+			<LSB>0</LSB>
+			<MSB>0</MSB>
+			<Program>0</Program>
+			</MIDI>
+			<RSE>
+			<SoundbankPatch>German-APiano</SoundbankPatch>
+			<Pickups>
+			<OverloudPosition>0</OverloudPosition>
+			<Volumes>1 1</Volumes>
+			<Tones>1 1</Tones>
+			</Pickups>
+			<EffectChain>
+			<Effect id="M08_GraphicEQ10Band">
+			<Parameters>1 0 0.75 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5</Parameters>
+			</Effect>
+			<Effect />
+			<Effect />
+			<Effect />
+			<Effect />
+			<Effect />
+			</EffectChain>
+			</RSE>
+			</Sound>
+			</Sounds>
+			<MidiConnection>
+			<Port>0</Port>
+			<PrimaryChannel>8</PrimaryChannel>
+			<SecondaryChannel>10</SecondaryChannel>
+			<ForeOneChannelPerString>false</ForeOneChannelPerString>
+			</MidiConnection>
+			<PlaybackState>Default</PlaybackState>
+			<AudioEngineState>RSE</AudioEngineState>
+			<Lyrics dispatched="true">
+			<Line>
+			<Text><![CDATA[]]></Text>
+			<Offset>0</Offset>
+			</Line>
+			<Line>
+			<Text><![CDATA[]]></Text>
+			<Offset>0</Offset>
+			</Line>
+			<Line>
+			<Text><![CDATA[]]></Text>
+			<Offset>0</Offset>
+			</Line>
+			<Line>
+			<Text><![CDATA[]]></Text>
+			<Offset>0</Offset>
+			</Line>
+			<Line>
+			<Text><![CDATA[]]></Text>
+			<Offset>0</Offset>
+			</Line>
+			</Lyrics>
+			<Staves>
+			<Staff>
+			<Properties>
+			<Property name="CapoFret">
+			<Fret>0</Fret>
+			</Property>
+			<Property name="FretCount">
+			<Number>24</Number>
+			</Property>
+			<Property name="PartialCapoFret">
+			<Fret>0</Fret>
+			</Property>
+			<Property name="PartialCapoStringFlags">
+			<Bitset>000000</Bitset>
+			</Property>
+			<Property name="Tuning">
+			<Pitches>40 45 50 55 59 64</Pitches>
+			<Flat></Flat>
+			<Instrument>Guitar</Instrument>
+			<Label><![CDATA[]]></Label>
+			<LabelVisible>true</LabelVisible>
+			</Property>
+			<Property name="ChordCollection">
+			<Items/>
+			</Property>
+			<Property name="ChordWorkingSet">
+			<Items/>
+			</Property>
+			<Property name="DiagramCollection">
+			<Items/>
+			</Property>
+			<Property name="DiagramWorkingSet">
+			<Items/>
+			</Property>
+			<Property name="TuningFlat">
+			<Enable />
+			</Property>
+			<Name><![CDATA[Standard]]></Name>
+			</Properties>
+			</Staff>
+			</Staves>
+			<Automations>
+			<Automation>
+			<Type>Sound</Type>
+			<Linear>false</Linear>
+			<Bar>0</Bar>
+			<Position>0</Position>
+			<Visible>true</Visible>
+			<Value><![CDATA[Orchestra/Keyboard/Acoustic Piano;Acoustic Piano;Factory]]></Value>
+			</Automation>
+			</Automations>
+		</Track>
+
+		<!--SingleStaff+Trans2+OneOctaveHigher Track-->
+		<!--Transposition: C Played as D (int: +2)-->
+		<!--Transposition: Octave: One octave higher-->
+
+		<Track id="5">
+			<Name><![CDATA[SingleStaff+Trans2+OneOctaveHigher]]></Name>
+			<ShortName><![CDATA[pno.]]></ShortName>
+			<Color>234 188 124</Color>
+			<SystemsDefautLayout>3</SystemsDefautLayout>
+			<SystemsLayout>1</SystemsLayout>
+			<PalmMute>0</PalmMute>
+			<PlayingStyle>Default</PlayingStyle>
+			<IconId>10</IconId>
+
+			<InstrumentSet>
+				<Name>Acoustic Piano</Name>
+				<Type>acousticPiano</Type>
+				<LineCount>5</LineCount>
+				<Elements>
+					<Element>
+						<Name>Pitched</Name>
+						<Type>pitched</Type>
+						<SoundbankName></SoundbankName>
+						<Articulations>
+							<Articulation>
+								<Name></Name>
+								<StaffLine>0</StaffLine>
+								<Noteheads>noteheadBlack noteheadHalf noteheadWhole</Noteheads>
+								<TechniquePlacement>outside</TechniquePlacement>
+								<TechniqueSymbol></TechniqueSymbol>
+								<InputMidiNumbers></InputMidiNumbers>
+								<OutputRSESound></OutputRSESound>
+								<OutputMidiNumber>0</OutputMidiNumber>
+							</Articulation>
+						</Articulations>
+					</Element>
+				</Elements>
+			</InstrumentSet>
+
+			<Transpose>
+				<Chromatic>2</Chromatic>
+				<Octave>1</Octave>
+			</Transpose>
+
+			<RSE>
+				<ChannelStrip version="E56">
+					<Parameters>0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 1 0.5 0.5 0.795 0.5 0.5 0.5</Parameters>
+				</ChannelStrip>
+			</RSE>
+
+			<ForcedSound>-1</ForcedSound>
+			<Sounds>
+				<Sound>
+					<Name><![CDATA[Acoustic Piano]]></Name>
+					<Label><![CDATA[Acoustic Piano]]></Label>
+					<Path>Orchestra/Keyboard/Acoustic Piano</Path>
+					<Role>Factory</Role>
+					<MIDI>
+						<LSB>0</LSB>
+						<MSB>0</MSB>
+						<Program>0</Program>
+					</MIDI>
+					<RSE>
+						<SoundbankPatch>German-APiano</SoundbankPatch>
+						<Pickups>
+							<OverloudPosition>0</OverloudPosition>
+							<Volumes>1 1</Volumes>
+							<Tones>1 1</Tones>
+						</Pickups>
+						<EffectChain>
+							<Effect id="M08_GraphicEQ10Band">
+							<Parameters>1 0 0.75 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5</Parameters>
+							</Effect>
+							<Effect />
+							<Effect />
+							<Effect />
+							<Effect />
+							<Effect />
+						</EffectChain>
+					</RSE>
+				</Sound>
+			</Sounds>
+
+			<MidiConnection>
+				<Port>0</Port>
+				<PrimaryChannel>11</PrimaryChannel>
+				<SecondaryChannel>12</SecondaryChannel>
+				<ForeOneChannelPerString>false</ForeOneChannelPerString>
+			</MidiConnection>
+
+			<PlaybackState>Default</PlaybackState>
+			<AudioEngineState>RSE</AudioEngineState>
+			<Lyrics dispatched="true">
+				<Line>
+					<Text><![CDATA[]]></Text>
+					<Offset>0</Offset>
+				</Line>
+				<Line>
+					<Text><![CDATA[]]></Text>
+					<Offset>0</Offset>
+				</Line>
+				<Line>
+					<Text><![CDATA[]]></Text>
+					<Offset>0</Offset>
+				</Line>
+				<Line>
+					<Text><![CDATA[]]></Text>
+					<Offset>0</Offset>
+				</Line>
+				<Line>
+					<Text><![CDATA[]]></Text>
+					<Offset>0</Offset>
+				</Line>
+			</Lyrics>
+
+			<Staves>
+				<Staff>
+					<Properties>
+						<Property name="CapoFret">
+							<Fret>0</Fret>
+						</Property>
+						<Property name="FretCount">
+							<Number>24</Number>
+						</Property>
+						<Property name="PartialCapoFret">
+							<Fret>0</Fret>
+						</Property>
+						<Property name="PartialCapoStringFlags">
+							<Bitset>000000</Bitset>
+						</Property>
+						<Property name="Tuning">
+							<Pitches>40 45 50 55 59 64</Pitches>
+							<Flat></Flat>
+							<Instrument>Guitar</Instrument>
+							<Label><![CDATA[]]></Label>
+							<LabelVisible>true</LabelVisible>
+						</Property>
+						<Property name="ChordCollection">
+							<Items/>
+						</Property>
+						<Property name="ChordWorkingSet">
+							<Items/>
+						</Property>
+						<Property name="DiagramCollection">
+							<Items/>
+						</Property>
+							<Property name="DiagramWorkingSet">
+							<Items/>
+						</Property>
+						<Property name="TuningFlat">
+							<Enable />
+						</Property>
+						<Name><![CDATA[Standard]]></Name>
+					</Properties>
+				</Staff>
+			</Staves>
+
+			<Automations>
+				<Automation>
+					<Type>Sound</Type>
+					<Linear>false</Linear>
+					<Bar>0</Bar>
+					<Position>0</Position>
+					<Visible>true</Visible>
+					<Value><![CDATA[Orchestra/Keyboard/Acoustic Piano;Acoustic Piano;Factory]]></Value>
+				</Automation>
+			</Automations>
+		</Track>
+
+		<!--SingleStaff+Trans2+OneOctaveLower Track-->
+		<!--Transposition: C Played as D (int: +2)-->
+		<!--Transposition: Octave: One octave lower-->
+
+		<Track id="6">
+			<Name><![CDATA[SingleStaff+Trans2+OneOctaveLower]]></Name>
+			<ShortName><![CDATA[pno.]]></ShortName>
+			<Color>234 188 124</Color>
+			<SystemsDefautLayout>3</SystemsDefautLayout>
+			<SystemsLayout>1</SystemsLayout>
+			<PalmMute>0</PalmMute>
+			<PlayingStyle>Default</PlayingStyle>
+			<IconId>10</IconId>
+
+			<InstrumentSet>
+				<Name>Acoustic Piano</Name>
+				<Type>acousticPiano</Type>
+				<LineCount>5</LineCount>
+				<Elements>
+					<Element>
+						<Name>Pitched</Name>
+						<Type>pitched</Type>
+						<SoundbankName></SoundbankName>
+						<Articulations>
+							<Articulation>
+								<Name></Name>
+								<StaffLine>0</StaffLine>
+								<Noteheads>noteheadBlack noteheadHalf noteheadWhole</Noteheads>
+								<TechniquePlacement>outside</TechniquePlacement>
+								<TechniqueSymbol></TechniqueSymbol>
+								<InputMidiNumbers></InputMidiNumbers>
+								<OutputRSESound></OutputRSESound>
+								<OutputMidiNumber>0</OutputMidiNumber>
+							</Articulation>
+						</Articulations>
+					</Element>
+				</Elements>
+			</InstrumentSet>
+
+			<Transpose>
+				<Chromatic>-10</Chromatic>
+				<Octave>0</Octave>
+			</Transpose>
+
+			<RSE>
+				<ChannelStrip version="E56">
+					<Parameters>0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 1 0.5 0.5 0.795 0.5 0.5 0.5</Parameters>
+				</ChannelStrip>
+			</RSE>
+
+			<ForcedSound>-1</ForcedSound>
+			<Sounds>
+				<Sound>
+					<Name><![CDATA[Acoustic Piano]]></Name>
+					<Label><![CDATA[Acoustic Piano]]></Label>
+					<Path>Orchestra/Keyboard/Acoustic Piano</Path>
+					<Role>Factory</Role>
+					<MIDI>
+						<LSB>0</LSB>
+						<MSB>0</MSB>
+						<Program>0</Program>
+					</MIDI>
+					<RSE>
+						<SoundbankPatch>German-APiano</SoundbankPatch>
+						<Pickups>
+							<OverloudPosition>0</OverloudPosition>
+							<Volumes>1 1</Volumes>
+							<Tones>1 1</Tones>
+						</Pickups>
+						<EffectChain>
+							<Effect id="M08_GraphicEQ10Band">
+								<Parameters>1 0 0.75 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5</Parameters>
+							</Effect>
+							<Effect />
+							<Effect />
+							<Effect />
+							<Effect />
+							<Effect />
+						</EffectChain>
+					</RSE>
+				</Sound>
+			</Sounds>
+
+			<MidiConnection>
+				<Port>0</Port>
+				<PrimaryChannel>13</PrimaryChannel>
+				<SecondaryChannel>14</SecondaryChannel>
+				<ForeOneChannelPerString>false</ForeOneChannelPerString>
+			</MidiConnection>
+
+			<PlaybackState>Default</PlaybackState>
+			<AudioEngineState>RSE</AudioEngineState>
+
+			<Lyrics dispatched="true">
+				<Line>
+					<Text><![CDATA[]]></Text>
+					<Offset>0</Offset>
+				</Line>
+				<Line>
+					<Text><![CDATA[]]></Text>
+					<Offset>0</Offset>
+				</Line>
+				<Line>
+					<Text><![CDATA[]]></Text>
+					<Offset>0</Offset>
+				</Line>
+				<Line>
+					<Text><![CDATA[]]></Text>
+					<Offset>0</Offset>
+				</Line>
+				<Line>
+					<Text><![CDATA[]]></Text>
+					<Offset>0</Offset>
+				</Line>
+			</Lyrics>
+
+			<Staves>
+				<Staff>
+					<Properties>
+						<Property name="CapoFret">
+							<Fret>0</Fret>
+						</Property>
+						<Property name="FretCount">
+							<Number>24</Number>
+						</Property>
+						<Property name="PartialCapoFret">
+							<Fret>0</Fret>
+						</Property>
+						<Property name="PartialCapoStringFlags">
+							<Bitset>000000</Bitset>
+						</Property>
+						<Property name="Tuning">
+							<Pitches>40 45 50 55 59 64</Pitches>
+							<Flat></Flat>
+							<Instrument>Guitar</Instrument>
+							<Label><![CDATA[]]></Label>
+							<LabelVisible>true</LabelVisible>
+						</Property>
+						<Property name="ChordCollection">
+							<Items/>
+						</Property>
+						<Property name="ChordWorkingSet">
+							<Items/>
+						</Property>
+						<Property name="DiagramCollection">
+							<Items/>
+						</Property>
+						<Property name="DiagramWorkingSet">
+							<Items/>
+						</Property>
+						<Property name="TuningFlat">
+							<Enable />
+						</Property>
+						<Name><![CDATA[Standard]]></Name>
+					</Properties>
+				</Staff>
+			</Staves>
+
+			<Automations>
+				<Automation>
+					<Type>Sound</Type>
+					<Linear>false</Linear>
+					<Bar>0</Bar>
+					<Position>0</Position>
+					<Visible>true</Visible>
+					<Value><![CDATA[Orchestra/Keyboard/Acoustic Piano;Acoustic Piano;Factory]]></Value>
+				</Automation>
+			</Automations>
+		</Track>
+	</Tracks>
+
+	<MasterBars>
+		<!-- order is important here -->
+		<MasterBar>
+			<Key>
+			<AccidentalCount>0</AccidentalCount>
+			<Mode>Major</Mode>
+			<TransposeAs>Sharps</TransposeAs>
+			</Key>
+			<Time>4/4</Time>
+			<Bars>0 1 2 3 4 5 6 7</Bars>
+		</MasterBar>
+	</MasterBars>
+
+	<Bars>
+		<Bar id="0">
+			<Clef>G2</Clef>
+			<Voices>0 1 2 3</Voices>
+		</Bar>
+		<Bar id="1">
+			<Clef>G2</Clef>
+			<Voices>-1 -1 -1 -1</Voices>
+		</Bar>
+		<Bar id="2">
+			<Clef>F4</Clef>
+			<Voices>-1 -1 -1 -1</Voices>
+		</Bar>
+		<Bar id="3">
+			<Clef>G2</Clef>
+			<Voices>-1 -1 -1 -1</Voices>
+		</Bar>
+		<Bar id="4">
+			<Clef>G2</Clef>
+			<Voices>-1 -1 -1 -1</Voices>
+		</Bar>
+		<Bar id="5">
+			<Clef>G2</Clef>
+			<Voices>-1 -1 -1 -1</Voices>
+		</Bar>
+			<Bar id="6">
+			<Clef>G2</Clef>
+			<Voices>-1 -1 -1 -1</Voices>
+		</Bar>
+		<Bar id="7">
+			<Clef>G2</Clef>
+			<Voices>-1 -1 -1 -1</Voices>
+		</Bar>
+	</Bars>
+
+	<Voices>
+		<Voice id="0">
+			<Beats>0</Beats>
+		</Voice>
+		<Voice id="1">
+			<Beats>1</Beats>
+		</Voice>
+		<Voice id="2">
+			<Beats>2</Beats>
+		</Voice>
+		<Voice id="3">
+			<Beats>3</Beats>
+		</Voice>
+	</Voices>
+
+	<Beats>
+		<Beat id="0">
+			<Dynamic>MF</Dynamic>
+			<Rhythm ref="0" />
+			<TransposedPitchStemOrientation>Upward</TransposedPitchStemOrientation>
+			<ConcertPitchStemOrientation>Undefined</ConcertPitchStemOrientation>
+			<Notes>0</Notes>
+			<Properties>
+				<Property name="PrimaryPickupVolume">
+					<Float>0.500000</Float>
+				</Property>
+				<Property name="PrimaryPickupTone">
+					<Float>0.500000</Float>
+				</Property>
+			</Properties>
+		</Beat>
+
+		<Beat id="1">
+			<Dynamic>MF</Dynamic>
+			<Rhythm ref="0" />
+			<TransposedPitchStemOrientation>Downward</TransposedPitchStemOrientation>
+			<ConcertPitchStemOrientation>Undefined</ConcertPitchStemOrientation>
+			<Notes>1</Notes>
+			<Properties>
+				<Property name="PrimaryPickupVolume">
+					<Float>0.500000</Float>
+				</Property>
+				<Property name="PrimaryPickupTone">
+					<Float>0.500000</Float>
+				</Property>
+			</Properties>
+		</Beat>
+
+		<Beat id="2">
+			<Dynamic>MF</Dynamic>
+			<Rhythm ref="0" />
+			<TransposedPitchStemOrientation>Upward</TransposedPitchStemOrientation>
+			<ConcertPitchStemOrientation>Undefined</ConcertPitchStemOrientation>
+			<Notes>2</Notes>
+			<Properties>
+				<Property name="PrimaryPickupVolume">
+				<Float>0.500000</Float>
+				</Property>
+				<Property name="PrimaryPickupTone">
+					<Float>0.500000</Float>
+				</Property>
+			</Properties>
+		</Beat>
+	
+		<Beat id="3">
+			<Dynamic>MF</Dynamic>
+			<Rhythm ref="0" />
+			<TransposedPitchStemOrientation>Downward</TransposedPitchStemOrientation>
+			<ConcertPitchStemOrientation>Undefined</ConcertPitchStemOrientation>
+			<Notes>3</Notes>
+			<Properties>
+				<Property name="PrimaryPickupVolume">
+					<Float>0.500000</Float>
+				</Property>
+				<Property name="PrimaryPickupTone">
+					<Float>0.500000</Float>
+				</Property>
+			</Properties>
+		</Beat>
+	</Beats>
+
+	<Notes>
+		<Note id="0">
+			<InstrumentArticulation>0</InstrumentArticulation>
+			<Properties>
+				<Property name="ConcertPitch">
+					<Pitch>
+						<Step>F</Step>
+						<Accidental></Accidental>
+						<Octave>6</Octave>
+					</Pitch>
+				</Property>
+				<Property name="Fret">
+					<Fret>13</Fret>
+				</Property>
+				<Property name="Midi">
+					<Number>77</Number>
+				</Property>
+				<Property name="String">
+					<String>5</String>
+				</Property>
+				<Property name="TransposedPitch">
+					<Pitch>
+						<Step>F</Step>
+						<Accidental></Accidental>
+						<Octave>6</Octave>
+					</Pitch>
+				</Property>
+			</Properties>
+		</Note>
+
+		<Note id="1">
+			<InstrumentArticulation>0</InstrumentArticulation>
+			<Properties>
+			<Property name="ConcertPitch">
+			<Pitch><Step>D</Step><Accidental></Accidental><Octave>6</Octave></Pitch></Property><Property name="Fret">
+			<Fret>10</Fret>
+			</Property>
+			<Property name="Midi">
+			<Number>74</Number>
+			</Property>
+			<Property name="String">
+			<String>5</String>
+			</Property>
+			<Property name="TransposedPitch">
+			<Pitch><Step>D</Step><Accidental></Accidental><Octave>6</Octave></Pitch></Property></Properties>
+		</Note>
+
+		<Note id="2">
+			<InstrumentArticulation>0</InstrumentArticulation>
+			<Properties>
+				<Property name="ConcertPitch">
+					<Pitch>
+						<Step>B</Step>
+						<Accidental></Accidental>
+						<Octave>5</Octave>
+					</Pitch>
+				</Property>
+				<Property name="Fret">
+					<Fret>7</Fret>
+				</Property>
+				<Property name="Midi">
+					<Number>71</Number>
+				</Property>
+				<Property name="String">
+					<String>5</String>
+				</Property>
+				<Property name="TransposedPitch">
+					<Pitch>
+						<Step>B</Step>
+						<Accidental></Accidental>
+						<Octave>5</Octave>
+					</Pitch>
+				</Property>
+			</Properties>
+		</Note>
+
+		<Note id="3">
+			<InstrumentArticulation>0</InstrumentArticulation>
+			<Properties>
+				<Property name="ConcertPitch">
+					<Pitch>
+						<Step>G</Step>
+						<Accidental></Accidental>
+						<Octave>5</Octave>
+					</Pitch>
+				</Property>
+				<Property name="Fret">
+					<Fret>3</Fret>
+				</Property>
+				<Property name="Midi">
+					<Number>67</Number>
+				</Property>
+				<Property name="String">
+					<String>5</String>
+				</Property>
+				<Property name="TransposedPitch">
+					<Pitch>
+						<Step>G</Step>
+						<Accidental></Accidental>
+						<Octave>5</Octave>
+					</Pitch>
+				</Property>
+			</Properties>
+		</Note>
+	</Notes>
+
+	<Rhythms>
+		<Rhythm id="0">
+			<NoteValue>Whole</NoteValue>
+		</Rhythm>
+	</Rhythms>
+</GPIF>
