@@ -75,6 +75,6 @@ struct GuitarPro7Importer {
 			MusicNotation.Staff(with: track)
 		}
 
-		return MusicNotation.Score(staves: staves)
+		return MusicNotation.Score(parts: [Part(staves: staves)])
 	}
 }
