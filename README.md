@@ -19,6 +19,7 @@ Import various music notation file formats into [music-notation](https://github.
 - [SWXMLHash](https://github.com/drmohundro/SWXMLHash)
 - [ZIPFoundation](https://github.com/weichsel/ZIPFoundation)
 - [music-notation](https://github.com/music-notation-swift/music-notation)
+- [music-notation-import-guitarpro](https://github.com/music-notation-swift/music-notation-import-guitarpro)
 
 ## Notes
 
