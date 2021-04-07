@@ -15,7 +15,6 @@ public enum FileExists: Equatable {
 }
 
 public func == (lhs: FileExists, rhs: FileExists) -> Bool {
-
 	switch (lhs, rhs) {
 	case (.none, .none),
 		 (.file, .file),
@@ -28,7 +27,6 @@ public func == (lhs: FileExists, rhs: FileExists) -> Bool {
 
 extension FileManager {
 	public func exists(atUrl url: URL) -> FileExists {
-
 		var isDirectory: ObjCBool = false
 		let exists = self.fileExists(atPath: url.path, isDirectory: &isDirectory)
 

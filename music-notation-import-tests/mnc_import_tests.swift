@@ -54,7 +54,7 @@ struct BasicItem: XMLIndexerDeserializable {
 
 extension BasicItem: Equatable {
 	static func == (lhs: BasicItem, rhs: BasicItem) -> Bool {
-		return lhs.name == rhs.name && lhs.price == rhs.price
+		lhs.name == rhs.name && lhs.price == rhs.price
 	}
 }
 
@@ -72,7 +72,7 @@ struct AttributeItem: XMLElementDeserializable {
 
 extension AttributeItem: Equatable {
 	static func == (lhs: AttributeItem, rhs: AttributeItem) -> Bool {
-		return lhs.name == rhs.name && lhs.price == rhs.price
+		lhs.name == rhs.name && lhs.price == rhs.price
 	}
 }
 
@@ -95,7 +95,7 @@ struct AttributeItemStringRawRepresentable: XMLElementDeserializable {
 
 extension AttributeItemStringRawRepresentable: Equatable {
 	static func == (lhs: AttributeItemStringRawRepresentable, rhs: AttributeItemStringRawRepresentable) -> Bool {
-		return lhs.name == rhs.name && lhs.price == rhs.price
+		lhs.name == rhs.name && lhs.price == rhs.price
 	}
 }
 
@@ -223,13 +223,13 @@ struct ComplexItem: XMLIndexerDeserializable {
 
 extension ComplexItem: Equatable {
 	static func == (lhs: ComplexItem, rhs: ComplexItem) -> Bool {
-		return lhs.name == rhs.name && lhs.priceOptional == rhs.priceOptional && lhs.basics == rhs.basics && lhs.attrs == rhs.attrs
+		lhs.name == rhs.name && lhs.priceOptional == rhs.priceOptional && lhs.basics == rhs.basics && lhs.attrs == rhs.attrs
 	}
 }
 
 extension TypeConversionComplexTypesTests {
 	static var allTests: [(String, (TypeConversionComplexTypesTests) -> () throws -> Void)] {
-		return [
+		[
 			("testShouldConvertComplexitemToNonOptional", testShouldConvertComplexitemToNonOptional),
 			("testShouldThrowWhenConvertingEmptyToNonOptional", testShouldThrowWhenConvertingEmptyToNonOptional),
 			("testShouldThrowWhenConvertingMissingToNonOptional", testShouldThrowWhenConvertingMissingToNonOptional),

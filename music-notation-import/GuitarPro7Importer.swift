@@ -7,10 +7,10 @@
 //
 
 import Foundation
-import SWXMLHash
-import ZIPFoundation
 import MusicNotation
 import MusicNotationImportGuitarPro
+import SWXMLHash
+import ZIPFoundation
 
 public struct GuitarPro7ImportError: Error, CustomStringConvertible {
 	public internal(set) var file: URL
@@ -46,7 +46,7 @@ struct GuitarPro7Importer {
 
 			var xmlData = Data()
 
-			_ = try archive.extract(scoreEntry, consumer: { (data) in
+			_ = try archive.extract(scoreEntry, consumer: { data in
 				xmlData.append(data)
 			})
 
@@ -71,10 +71,10 @@ struct GuitarPro7Importer {
 	}
 
 	func createNotation(with interchangeFormat: MusicNotationImportGuitarPro.GuitarProInterchangeFormat) throws -> MusicNotation.Score {
-		let staves = interchangeFormat.tracks.map { track in
-			MusicNotation.Staff(with: track)
+		let parts = interchangeFormat.tracks.map { track in
+			MusicNotation.Part(with: track)
 		}
 
-		return MusicNotation.Score(parts: [Part(staves: staves)])
+		return MusicNotation.Score(parts: parts)
 	}
 }

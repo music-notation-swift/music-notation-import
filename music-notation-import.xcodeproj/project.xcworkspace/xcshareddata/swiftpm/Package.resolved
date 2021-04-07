@@ -6,8 +6,8 @@
         "repositoryURL": "https://github.com/music-notation-swift/music-notation.git",
         "state": {
           "branch": null,
-          "revision": "5f7397f5dcdc060872353c35bb7310f0d3dd6ca4",
-          "version": "0.2.8"
+          "revision": "5d115b29ea56de3c5ef1cd9c95c3849b528184c3",
+          "version": "0.2.10"
         }
       },
       {
@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/music-notation-swift/music-notation-import-guitarpro.git",
         "state": {
           "branch": null,
-          "revision": "4e1646b511a6af404071a5d4d0a37b084e50ed10",
-          "version": "0.5.4"
+          "revision": "5d897702e68d28759f70d909813c0db35da68937",
+          "version": "0.5.6"
         }
       },
       {
