@@ -16,10 +16,25 @@ Import various music notation file formats into [music-notation](https://github.
 
 ## Dependencies
 
+- [ArgumentParser](https://github.com/apple/swift-argument-parser)
+
+  Used to create the command line interface.
+
 - [SWXMLHash](https://github.com/drmohundro/SWXMLHash)
+
+  Used to parse the XML data in the GuitarPro files.
+
 - [ZIPFoundation](https://github.com/weichsel/ZIPFoundation)
+
+  Used to find the XML file within the GuitarPro file (which is just a folder zipped with some files in it)
+
 - [music-notation](https://github.com/music-notation-swift/music-notation)
+
+  The whole point of this exercise. The music notation model we are trying to parse to.
+
 - [music-notation-import-guitarpro](https://github.com/music-notation-swift/music-notation-import-guitarpro)
+
+  The actual code that implements the XML parsing of GuitarPro specific data.
 
 ## Notes
 
