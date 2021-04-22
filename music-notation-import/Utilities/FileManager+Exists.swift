@@ -25,10 +25,10 @@ public func == (lhs: FileExists, rhs: FileExists) -> Bool {
 	}
 }
 
-extension FileManager {
-	public func exists(atUrl url: URL) -> FileExists {
+public extension FileManager {
+	func exists(atUrl url: URL) -> FileExists {
 		var isDirectory: ObjCBool = false
-		let exists = self.fileExists(atPath: url.path, isDirectory: &isDirectory)
+		let exists = fileExists(atPath: url.path, isDirectory: &isDirectory)
 
 		switch (exists, isDirectory.boolValue) {
 		case (false, _): return .none

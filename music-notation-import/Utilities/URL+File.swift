@@ -13,7 +13,7 @@ extension URL {
 	var isFolder: Bool { FileManager.default.exists(atUrl: self) == .folder }
 
 	func hasExtension(_ extensionStrings: [String]) -> Bool {
-		guard self.fileExists else { return false }
+		guard fileExists else { return false }
 
 		let matchingExtensions = extensionStrings.filter { pathExtension == $0 }
 		return !matchingExtensions.isEmpty
