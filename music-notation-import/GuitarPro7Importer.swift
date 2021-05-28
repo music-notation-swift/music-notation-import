@@ -12,19 +12,6 @@ import MusicNotationImportGuitarPro
 import SWXMLHash
 import ZIPFoundation
 
-public struct GuitarPro7ImportError: Error, CustomStringConvertible {
-	public internal(set) var file: URL
-	public internal(set) var message: String
-
-	/// Creates a new validation error with the given message.
-	public init(file: URL, _ message: String) {
-		self.file = file
-		self.message = message
-	}
-
-	public var description: String { message }
-}
-
 struct GuitarPro7Importer {
 	let file: URL
 	let options: ImportOptions
@@ -37,12 +24,12 @@ struct GuitarPro7Importer {
 
 		switch file.pathExtension {
 		case "gpif":
-			guard let string = try? String(contentsOf: file) else { throw GuitarPro7ImportError(file: file, "Could not open gpif file") }
+			guard let string = try? String(contentsOf: file) else { throw ImportError(file: file, "Could not open gpif file") }
 			xmlString = string
 
 		case "gp":
-			guard let archive = Archive(url: file, accessMode: .read) else { throw GuitarPro7ImportError(file: file, "Could not open gp archive") }
-			guard let scoreEntry = archive["Content/score.gpif"] else { throw GuitarPro7ImportError(file: file, "Could not open score.gpif inside gp archive") }
+			guard let archive = Archive(url: file, accessMode: .read) else { throw ImportError(file: file, "Could not open gp archive") }
+			guard let scoreEntry = archive["Content/score.gpif"] else { throw ImportError(file: file, "Could not open score.gpif inside gp archive") }
 
 			var xmlData = Data()
 
@@ -50,7 +37,7 @@ struct GuitarPro7Importer {
 				xmlData.append(data)
 			})
 
-			guard let string = String(data: xmlData, encoding: .utf8) else { throw GuitarPro7ImportError(file: file, "Could not convert data from archive to string") }
+			guard let string = String(data: xmlData, encoding: .utf8) else { throw ImportError(file: file, "Could not convert data from archive to string") }
 			xmlString = string
 
 		default:
