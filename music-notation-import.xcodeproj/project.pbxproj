@@ -536,8 +536,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/music-notation-swift/music-notation-import-lilypond.git";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.0;
 			};
 		};
 		E2C6625E260BC2F7003A5291 /* XCRemoteSwiftPackageReference "SWXMLHash" */ = {
