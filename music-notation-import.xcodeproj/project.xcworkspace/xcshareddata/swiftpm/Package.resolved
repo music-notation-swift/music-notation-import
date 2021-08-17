@@ -6,8 +6,8 @@
         "repositoryURL": "https://github.com/music-notation-swift/music-notation.git",
         "state": {
           "branch": null,
-          "revision": "5d115b29ea56de3c5ef1cd9c95c3849b528184c3",
-          "version": "0.2.10"
+          "revision": "3b62e51b4cce1cc5b4a5aba32cec8fae14d683ce",
+          "version": "0.2.11"
         }
       },
       {
@@ -15,8 +15,17 @@
         "repositoryURL": "https://github.com/music-notation-swift/music-notation-import-guitarpro.git",
         "state": {
           "branch": null,
-          "revision": "5d897702e68d28759f70d909813c0db35da68937",
-          "version": "0.5.6"
+          "revision": "56a48da7acb80626e31b2afe9339a108c58fc63c",
+          "version": "0.5.7"
+        }
+      },
+      {
+        "package": "music-notation-import-lilypond",
+        "repositoryURL": "https://github.com/music-notation-swift/music-notation-import-lilypond.git",
+        "state": {
+          "branch": null,
+          "revision": "c6330b44395b60968e52e87a80450998a96071d1",
+          "version": "0.0.1"
         }
       },
       {
@@ -24,8 +33,8 @@
         "repositoryURL": "https://github.com/apple/swift-argument-parser.git",
         "state": {
           "branch": null,
-          "revision": "831ed5e860a70e745bc1337830af4786b2576881",
-          "version": "0.4.1"
+          "revision": "986d191f94cec88f6350056da59c2e59e83d1229",
+          "version": "0.4.3"
         }
       },
       {
