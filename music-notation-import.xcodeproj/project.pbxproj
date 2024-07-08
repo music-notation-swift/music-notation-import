@@ -46,6 +46,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E2032CFA271632C4007347ED /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E223659D25D4CC2500258DD5 /* music-notation-import-tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "music-notation-import-tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E223659F25D4CC2500258DD5 /* mnc_import_tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mnc_import_tests.swift; sourceTree = "<group>"; };
 		E22365A125D4CC2500258DD5 /* Info.plist */ = {isa = PBXFileReference; explicitFileType = text.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -102,6 +103,7 @@
 		E2DB7E6925C86E0700F7395D = {
 			isa = PBXGroup;
 			children = (
+				E2032CFA271632C4007347ED /* README.md */,
 				E2DB7E7425C86E0700F7395D /* music-notation-import */,
 				E223659E25D4CC2500258DD5 /* music-notation-import-tests */,
 				E2DB7E7325C86E0700F7395D /* Products */,

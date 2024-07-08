@@ -145,12 +145,11 @@ class TypeConversionComplexTypesTests: XCTestCase {
 		]
 	)
 
-	override func setUp() {
-		super.setUp()
+	override func setUpWithError() throws { 
 		parser = SWXMLHash.parse(xmlWithComplexType)
 	}
 
-	func testShouldConvertComplexitemToNonOptional() {
+	func testShouldConvertComplexitemToNonOptional() throws {
 		do {
 			let value: ComplexItem = try parser!["root"]["complexItem"].value()
 			XCTAssertEqual(value, correctComplexItem)
@@ -159,7 +158,7 @@ class TypeConversionComplexTypesTests: XCTestCase {
 		}
 	}
 
-	func testShouldThrowWhenConvertingEmptyToNonOptional() {
+	func testShouldThrowWhenConvertingEmptyToNonOptional() throws {
 		XCTAssertThrowsError(try (parser!["root"]["empty"].value() as ComplexItem)) { error in
 			guard error is XMLDeserializationError else {
 				XCTFail("Wrong type of error")
@@ -168,7 +167,7 @@ class TypeConversionComplexTypesTests: XCTestCase {
 		}
 	}
 
-	func testShouldThrowWhenConvertingMissingToNonOptional() {
+	func testShouldThrowWhenConvertingMissingToNonOptional() throws {
 		XCTAssertThrowsError(try (parser!["root"]["missing"].value() as ComplexItem)) { error in
 			guard error is XMLDeserializationError else {
 				XCTFail("Wrong type of error")
@@ -177,7 +176,7 @@ class TypeConversionComplexTypesTests: XCTestCase {
 		}
 	}
 
-	func testShouldConvertComplexitemToOptional() {
+	func testShouldConvertComplexitemToOptional() throws {
 		do {
 			let value: ComplexItem? = try parser!["root"]["complexItem"].value()
 			XCTAssertEqual(value, correctComplexItem)
@@ -186,7 +185,7 @@ class TypeConversionComplexTypesTests: XCTestCase {
 		}
 	}
 
-	func testShouldConvertEmptyToOptional() {
+	func testShouldConvertEmptyToOptional() throws {
 		XCTAssertThrowsError(try (parser!["root"]["empty"].value() as ComplexItem?)) { error in
 			guard error is XMLDeserializationError else {
 				XCTFail("Wrong type of error")
@@ -195,7 +194,7 @@ class TypeConversionComplexTypesTests: XCTestCase {
 		}
 	}
 
-	func testShouldConvertMissingToOptional() {
+	func testShouldConvertMissingToOptional() throws {
 		do {
 			let value: ComplexItem? = try parser!["root"]["missing"].value()
 			XCTAssertNil(value)
