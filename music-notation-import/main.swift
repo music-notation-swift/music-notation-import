@@ -59,3 +59,4 @@ struct mncimport: ParsableCommand {
 }
 
 mncimport.main()
+// swiftlint:enable type_name

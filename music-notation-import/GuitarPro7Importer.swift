@@ -49,7 +49,7 @@ struct GuitarPro7Importer {
 	}
 
 	func parseXML(_ xmlString: String) throws -> MusicNotationImportGuitarPro.GuitarProInterchangeFormat {
-		let xml = SWXMLHash.config { config in
+		let xml = XMLHash.config { config in
 			config.shouldProcessLazily = options.lazy
 			config.detectParsingErrors = true
 		}.parse(xmlString)

@@ -2,11 +2,10 @@ disabled_rules:
   - inclusive_language
   - todo
   - opening_brace
+  - attributes
 
 opt_in_rules:
-  - anyobject_protocol
   - array_init
-  - attributes
   - closure_end_indentation
   - closure_spacing
   - collection_alignment
