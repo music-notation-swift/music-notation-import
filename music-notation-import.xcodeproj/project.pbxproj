@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -47,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		E2032CFA271632C4007347ED /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E2184E0C2C61BD9F0024210A /* music-notation-import-guitarpro */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "music-notation-import-guitarpro"; path = "../music-notation-import-guitarpro"; sourceTree = "<group>"; };
 		E223659D25D4CC2500258DD5 /* music-notation-import-tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "music-notation-import-tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E223659F25D4CC2500258DD5 /* mnc_import_tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mnc_import_tests.swift; sourceTree = "<group>"; };
 		E22365A125D4CC2500258DD5 /* Info.plist */ = {isa = PBXFileReference; explicitFileType = text.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -108,6 +109,7 @@
 				E223659E25D4CC2500258DD5 /* music-notation-import-tests */,
 				E2DB7E7325C86E0700F7395D /* Products */,
 				E22365A525D4CD1200258DD5 /* Frameworks */,
+				E2184E0C2C61BD9F0024210A /* music-notation-import-guitarpro */,
 			);
 			sourceTree = "<group>";
 		};
@@ -179,7 +181,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				E21CFEF02C61833E007B6886 /* PBXTargetDependency */,
 			);
 			name = "music-notation-import";
 			packageProductDependencies = (
@@ -225,7 +226,6 @@
 				E219E56025DDF48A0060589D /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
 				E2C6625E260BC2F7003A5291 /* XCRemoteSwiftPackageReference "SWXMLHash" */,
 				E2724DE52660B3BF0074BA63 /* XCRemoteSwiftPackageReference "music-notation-import-lilypond" */,
-				E21CFEEE2C618250007B6886 /* XCRemoteSwiftPackageReference "music-notation-import-guitarpro" */,
 			);
 			productRefGroup = E2DB7E7325C86E0700F7395D /* Products */;
 			projectDirPath = "";
@@ -250,7 +250,6 @@
 /* Begin PBXShellScriptBuildPhase section */
 		E2C6626326123626003A5291 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -317,10 +316,6 @@
 			isa = PBXTargetDependency;
 			target = E2DB7E7125C86E0700F7395D /* music-notation-import */;
 			targetProxy = E219E56925E6E3180060589D /* PBXContainerItemProxy */;
-		};
-		E21CFEF02C61833E007B6886 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			productRef = E21CFEEF2C61833E007B6886 /* MusicNotationImportGuitarPro */;
 		};
 /* End PBXTargetDependency section */
 
@@ -546,15 +541,7 @@
 			repositoryURL = "https://github.com/weichsel/ZIPFoundation.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.9.11;
-			};
-		};
-		E21CFEEE2C618250007B6886 /* XCRemoteSwiftPackageReference "music-notation-import-guitarpro" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/music-notation-swift/music-notation-import-guitarpro.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.5.0;
+				minimumVersion = 0.9.19;
 			};
 		};
 		E2724DE52660B3BF0074BA63 /* XCRemoteSwiftPackageReference "music-notation-import-lilypond" */ = {
@@ -578,7 +565,7 @@
 			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.3.2;
+				minimumVersion = 0.5.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -591,11 +578,6 @@
 		};
 		E21CFEEC2C618176007B6886 /* MusicNotationImportGuitarPro */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = MusicNotationImportGuitarPro;
-		};
-		E21CFEEF2C61833E007B6886 /* MusicNotationImportGuitarPro */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E21CFEEE2C618250007B6886 /* XCRemoteSwiftPackageReference "music-notation-import-guitarpro" */;
 			productName = MusicNotationImportGuitarPro;
 		};
 		E2724DE62660B3BF0074BA63 /* MusicNotationImportLilyPond */ = {

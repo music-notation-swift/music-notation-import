@@ -32,7 +32,7 @@ struct SampleUserInfo {
 	}
 }
 
-struct BasicItem: XMLIndexerDeserializable {
+struct BasicItem: XMLObjectDeserialization {
 	let name: String
 	let price: Double
 	let id: String
@@ -146,7 +146,7 @@ class TypeConversionComplexTypesTests: XCTestCase {
 	)
 
 	override func setUpWithError() throws {
-		parser = SWXMLHash.parse(xmlWithComplexType)
+		parser = XMLHash.parse(xmlWithComplexType)
 	}
 
 	func testShouldConvertComplexitemToNonOptional() throws {
@@ -204,7 +204,7 @@ class TypeConversionComplexTypesTests: XCTestCase {
 	}
 }
 
-struct ComplexItem: XMLIndexerDeserializable {
+struct ComplexItem: XMLObjectDeserialization {
 	let name: String
 	let priceOptional: Double?
 	let basics: [BasicItem]
