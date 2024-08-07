@@ -8,6 +8,7 @@
 
 import ArgumentParser
 import Foundation
+import MusicNotationImportGuitarPro
 
 let argumentHelp: ArgumentHelp = """
 A filename of a file to import.
@@ -48,7 +49,7 @@ struct mncimport: ParsableCommand {
 			let fileExtension = file.pathExtension
 			switch fileExtension {
 			case "gp", "gpif":
-				let importer = GuitarPro7Importer(file: file, options: importOptions)
+                let importer = GuitarPro7Importer(file: file, verbose: importOptions.verbose, lazy: importOptions.lazy)
 				let score = try importer.consume()
 				print("Resulting score is: \(score)")
 			default:

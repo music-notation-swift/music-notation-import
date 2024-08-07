@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/music-notation-swift/music-notation.git",
       "state" : {
-        "revision" : "ad365e0c993bc4dfd8e524bf9c8ebc9b99baef7e",
-        "version" : "0.2.12"
+        "revision" : "3b62e51b4cce1cc5b4a5aba32cec8fae14d683ce",
+        "version" : "0.2.11"
       }
     },
     {

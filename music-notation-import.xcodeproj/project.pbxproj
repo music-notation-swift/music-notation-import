@@ -15,7 +15,6 @@
 		E2724DE72660B3BF0074BA63 /* MusicNotationImportLilyPond in Frameworks */ = {isa = PBXBuildFile; productRef = E2724DE62660B3BF0074BA63 /* MusicNotationImportLilyPond */; };
 		E2C66260260BC2F7003A5291 /* SWXMLHash in Frameworks */ = {isa = PBXBuildFile; productRef = E2C6625F260BC2F7003A5291 /* SWXMLHash */; };
 		E2C66262260BE88B003A5291 /* SWXMLHash in Frameworks */ = {isa = PBXBuildFile; productRef = E2C66261260BE88B003A5291 /* SWXMLHash */; };
-		E2C662692612AF74003A5291 /* GuitarPro7Importer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C662682612AF74003A5291 /* GuitarPro7Importer.swift */; };
 		E2DB7E7625C86E0700F7395D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB7E7525C86E0700F7395D /* main.swift */; };
 		E2DB7E8425C87C7600F7395D /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = E2DB7E8325C87C7600F7395D /* ArgumentParser */; };
 		E2DB7E8925C87E5500F7395D /* URL+File.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB7E8725C87E5500F7395D /* URL+File.swift */; };
@@ -53,7 +52,6 @@
 		E22365A125D4CC2500258DD5 /* Info.plist */ = {isa = PBXFileReference; explicitFileType = text.xml; path = Info.plist; sourceTree = "<group>"; };
 		E2724DE12660ACBD0074BA63 /* LilyPondImporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LilyPondImporter.swift; sourceTree = "<group>"; };
 		E2724DE32660AD0F0074BA63 /* Importer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Importer.swift; sourceTree = "<group>"; };
-		E2C662682612AF74003A5291 /* GuitarPro7Importer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuitarPro7Importer.swift; sourceTree = "<group>"; };
 		E2DB7E7225C86E0700F7395D /* music-notation-import */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "music-notation-import"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2DB7E7525C86E0700F7395D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		E2DB7E8725C87E5500F7395D /* URL+File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL+File.swift"; sourceTree = "<group>"; };
@@ -128,7 +126,6 @@
 				E2DB7E8625C87E2D00F7395D /* Utilities */,
 				E2DB7E8C25C87ECC00F7395D /* ImportOptions.swift */,
 				E2724DE32660AD0F0074BA63 /* Importer.swift */,
-				E2C662682612AF74003A5291 /* GuitarPro7Importer.swift */,
 				E2724DE12660ACBD0074BA63 /* LilyPondImporter.swift */,
 				E2DB7E7525C86E0700F7395D /* main.swift */,
 			);
@@ -181,6 +178,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				E2A1AC502C63361800348732 /* PBXTargetDependency */,
 			);
 			name = "music-notation-import";
 			packageProductDependencies = (
@@ -305,7 +303,6 @@
 				E2DB7E8925C87E5500F7395D /* URL+File.swift in Sources */,
 				E2724DE42660AD0F0074BA63 /* Importer.swift in Sources */,
 				E2724DE22660ACBD0074BA63 /* LilyPondImporter.swift in Sources */,
-				E2C662692612AF74003A5291 /* GuitarPro7Importer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +313,10 @@
 			isa = PBXTargetDependency;
 			target = E2DB7E7125C86E0700F7395D /* music-notation-import */;
 			targetProxy = E219E56925E6E3180060589D /* PBXContainerItemProxy */;
+		};
+		E2A1AC502C63361800348732 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = E2A1AC4F2C63361800348732 /* MusicNotationImportGuitarPro */;
 		};
 /* End PBXTargetDependency section */
 
@@ -584,6 +585,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E2724DE52660B3BF0074BA63 /* XCRemoteSwiftPackageReference "music-notation-import-lilypond" */;
 			productName = MusicNotationImportLilyPond;
+		};
+		E2A1AC4F2C63361800348732 /* MusicNotationImportGuitarPro */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MusicNotationImportGuitarPro;
 		};
 		E2C6625F260BC2F7003A5291 /* SWXMLHash */ = {
 			isa = XCSwiftPackageProductDependency;
