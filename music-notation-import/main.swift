@@ -18,7 +18,7 @@ Currently supported music notation file types include:
 """
 
 // swiftlint:disable type_name
-struct mncimport: ParsableCommand {
+struct mncimport: AsyncParsableCommand {
 	@Argument(help: argumentHelp, transform: { URL(fileURLWithPath: NSString(string: $0).expandingTildeInPath) }) var files: [URL]
 	@Flag(name: [.customLong("verbose"), .customShort("v")], help: "Shows verbose output.") var verbose = false
 	@Flag(name: [.customLong("lazy"), .customShort("l")], help: "Process XML lazily.") var lazy = false
