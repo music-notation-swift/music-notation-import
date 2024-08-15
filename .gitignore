@@ -19,3 +19,4 @@ DerivedData
 *.lcov
 
 .DS_Store
+/music-notation-import.xcworkspace/xcshareddata/swiftpm/Package.resolved

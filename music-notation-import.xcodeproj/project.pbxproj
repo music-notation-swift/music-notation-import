@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E21CFEED2C618176007B6886 /* MusicNotationImportGuitarPro in Frameworks */ = {isa = PBXBuildFile; productRef = E21CFEEC2C618176007B6886 /* MusicNotationImportGuitarPro */; };
+		E24105492C6E6DCE0037065A /* MusicNotation in Frameworks */ = {isa = PBXBuildFile; productRef = E24105482C6E6DCE0037065A /* MusicNotation */; };
 		E2724DE42660AD0F0074BA63 /* Importer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2724DE32660AD0F0074BA63 /* Importer.swift */; };
 		E2724DE72660B3BF0074BA63 /* MusicNotationImportLilyPond in Frameworks */ = {isa = PBXBuildFile; productRef = E2724DE62660B3BF0074BA63 /* MusicNotationImportLilyPond */; };
 		E2DB7E7625C86E0700F7395D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB7E7525C86E0700F7395D /* main.swift */; };
@@ -44,6 +45,8 @@
 		E2184E0C2C61BD9F0024210A /* music-notation-import-guitarpro */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "music-notation-import-guitarpro"; path = "../music-notation-import-guitarpro"; sourceTree = "<group>"; };
 		E223659D25D4CC2500258DD5 /* music-notation-import-tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "music-notation-import-tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E22365A125D4CC2500258DD5 /* Info.plist */ = {isa = PBXFileReference; explicitFileType = text.xml; path = Info.plist; sourceTree = "<group>"; };
+		E241054C2C6E78C10037065A /* music-notation-import.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "music-notation-import.xctestplan"; sourceTree = "<group>"; };
+		E248B5CA2C6E6DA5002F3BDB /* music-notation */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "music-notation"; path = "../music-notation"; sourceTree = "<group>"; };
 		E2724DE32660AD0F0074BA63 /* Importer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Importer.swift; sourceTree = "<group>"; };
 		E2DB7E7225C86E0700F7395D /* music-notation-import */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "music-notation-import"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2DB7E7525C86E0700F7395D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -66,6 +69,7 @@
 			files = (
 				E2DB7E8425C87C7600F7395D /* ArgumentParser in Frameworks */,
 				E2724DE72660B3BF0074BA63 /* MusicNotationImportLilyPond in Frameworks */,
+				E24105492C6E6DCE0037065A /* MusicNotation in Frameworks */,
 				E21CFEED2C618176007B6886 /* MusicNotationImportGuitarPro in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -91,11 +95,13 @@
 		E2DB7E6925C86E0700F7395D = {
 			isa = PBXGroup;
 			children = (
+				E241054C2C6E78C10037065A /* music-notation-import.xctestplan */,
 				E2032CFA271632C4007347ED /* README.md */,
 				E2DB7E7425C86E0700F7395D /* music-notation-import */,
 				E223659E25D4CC2500258DD5 /* music-notation-import-tests */,
 				E2DB7E7325C86E0700F7395D /* Products */,
 				E22365A525D4CD1200258DD5 /* Frameworks */,
+				E248B5CA2C6E6DA5002F3BDB /* music-notation */,
 				E2184E0C2C61BD9F0024210A /* music-notation-import-guitarpro */,
 			);
 			sourceTree = "<group>";
@@ -165,6 +171,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				E241054B2C6E6DD70037065A /* PBXTargetDependency */,
 				E2A1AC502C63361800348732 /* PBXTargetDependency */,
 			);
 			name = "music-notation-import";
@@ -172,6 +179,7 @@
 				E2DB7E8325C87C7600F7395D /* ArgumentParser */,
 				E2724DE62660B3BF0074BA63 /* MusicNotationImportLilyPond */,
 				E21CFEEC2C618176007B6886 /* MusicNotationImportGuitarPro */,
+				E24105482C6E6DCE0037065A /* MusicNotation */,
 			);
 			productName = "music-notation-import";
 			productReference = E2DB7E7225C86E0700F7395D /* music-notation-import */;
@@ -294,6 +302,10 @@
 			isa = PBXTargetDependency;
 			target = E2DB7E7125C86E0700F7395D /* music-notation-import */;
 			targetProxy = E219E56925E6E3180060589D /* PBXContainerItemProxy */;
+		};
+		E241054B2C6E6DD70037065A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = E241054A2C6E6DD70037065A /* MusicNotation */;
 		};
 		E2A1AC502C63361800348732 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -540,6 +552,14 @@
 		E21CFEEC2C618176007B6886 /* MusicNotationImportGuitarPro */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = MusicNotationImportGuitarPro;
+		};
+		E24105482C6E6DCE0037065A /* MusicNotation */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MusicNotation;
+		};
+		E241054A2C6E6DD70037065A /* MusicNotation */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MusicNotation;
 		};
 		E2724DE62660B3BF0074BA63 /* MusicNotationImportLilyPond */ = {
 			isa = XCSwiftPackageProductDependency;
