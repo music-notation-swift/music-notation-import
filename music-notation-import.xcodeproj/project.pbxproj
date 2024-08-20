@@ -41,7 +41,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		E2032CFA271632C4007347ED /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E2032CFA271632C4007347ED /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; usesTabs = 0; };
 		E2184E0C2C61BD9F0024210A /* music-notation-import-guitarpro */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "music-notation-import-guitarpro"; path = "../music-notation-import-guitarpro"; sourceTree = "<group>"; };
 		E223659D25D4CC2500258DD5 /* music-notation-import-tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "music-notation-import-tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E22365A125D4CC2500258DD5 /* Info.plist */ = {isa = PBXFileReference; explicitFileType = text.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -105,6 +105,7 @@
 				E2184E0C2C61BD9F0024210A /* music-notation-import-guitarpro */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 		E2DB7E7325C86E0700F7395D /* Products */ = {
 			isa = PBXGroup;
