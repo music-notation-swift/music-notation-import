@@ -29,7 +29,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <TestPlans>
          <TestPlanReference
-            reference = "container:../music-notation/music-notation-import.xctestplan"
+            reference = "container:music-notation-import.xctestplan"
             default = "YES">
          </TestPlanReference>
       </TestPlans>
