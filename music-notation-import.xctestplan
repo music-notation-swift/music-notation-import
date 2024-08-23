@@ -39,13 +39,6 @@
     },
     {
       "target" : {
-        "containerPath" : "container:music-notation-import.xcodeproj",
-        "identifier" : "E223659C25D4CC2500258DD5",
-        "name" : "music-notation-import-tests"
-      }
-    },
-    {
-      "target" : {
         "containerPath" : "container:..\/music-notation",
         "identifier" : "MusicNotationTests",
         "name" : "MusicNotationTests"

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		E21CFEED2C618176007B6886 /* MusicNotationImportGuitarPro in Frameworks */ = {isa = PBXBuildFile; productRef = E21CFEEC2C618176007B6886 /* MusicNotationImportGuitarPro */; };
 		E24105492C6E6DCE0037065A /* MusicNotation in Frameworks */ = {isa = PBXBuildFile; productRef = E24105482C6E6DCE0037065A /* MusicNotation */; };
+		E26346792C79009A004EE41F /* MusicNotation in Frameworks */ = {isa = PBXBuildFile; productRef = E26346782C79009A004EE41F /* MusicNotation */; };
+		E263467B2C79009D004EE41F /* MusicNotationImportGuitarPro in Frameworks */ = {isa = PBXBuildFile; productRef = E263467A2C79009D004EE41F /* MusicNotationImportGuitarPro */; };
 		E2724DE42660AD0F0074BA63 /* Importer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2724DE32660AD0F0074BA63 /* Importer.swift */; };
 		E2724DE72660B3BF0074BA63 /* MusicNotationImportLilyPond in Frameworks */ = {isa = PBXBuildFile; productRef = E2724DE62660B3BF0074BA63 /* MusicNotationImportLilyPond */; };
 		E2DB7E7625C86E0700F7395D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB7E7525C86E0700F7395D /* main.swift */; };
@@ -17,16 +19,6 @@
 		E2DB7E8A25C87E5500F7395D /* FileManager+Exists.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB7E8825C87E5500F7395D /* FileManager+Exists.swift */; };
 		E2DB7E8D25C87ECC00F7395D /* ImportOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB7E8C25C87ECC00F7395D /* ImportOptions.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		E219E56925E6E3180060589D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E2DB7E6A25C86E0700F7395D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E2DB7E7125C86E0700F7395D;
-			remoteInfo = "music-notation-import";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		E2DB7E7025C86E0700F7395D /* CopyFiles */ = {
@@ -44,7 +36,6 @@
 		E2032CFA271632C4007347ED /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; usesTabs = 0; };
 		E2184E0C2C61BD9F0024210A /* music-notation-import-guitarpro */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "music-notation-import-guitarpro"; path = "../music-notation-import-guitarpro"; sourceTree = "<group>"; };
 		E223659D25D4CC2500258DD5 /* music-notation-import-tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "music-notation-import-tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E22365A125D4CC2500258DD5 /* Info.plist */ = {isa = PBXFileReference; explicitFileType = text.xml; path = Info.plist; sourceTree = "<group>"; };
 		E241054C2C6E78C10037065A /* music-notation-import.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = "music-notation-import.xctestplan"; sourceTree = "<group>"; };
 		E248B5CA2C6E6DA5002F3BDB /* music-notation */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "music-notation"; path = "../music-notation"; sourceTree = "<group>"; };
 		E2724DE32660AD0F0074BA63 /* Importer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Importer.swift; sourceTree = "<group>"; };
@@ -60,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E26346792C79009A004EE41F /* MusicNotation in Frameworks */,
+				E263467B2C79009D004EE41F /* MusicNotationImportGuitarPro in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,14 +70,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E223659E25D4CC2500258DD5 /* music-notation-import-tests */ = {
-			isa = PBXGroup;
-			children = (
-				E22365A125D4CC2500258DD5 /* Info.plist */,
-			);
-			path = "music-notation-import-tests";
-			sourceTree = "<group>";
-		};
 		E22365A525D4CD1200258DD5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,7 +83,6 @@
 				E241054C2C6E78C10037065A /* music-notation-import.xctestplan */,
 				E2032CFA271632C4007347ED /* README.md */,
 				E2DB7E7425C86E0700F7395D /* music-notation-import */,
-				E223659E25D4CC2500258DD5 /* music-notation-import-tests */,
 				E2DB7E7325C86E0700F7395D /* Products */,
 				E22365A525D4CD1200258DD5 /* Frameworks */,
 				E248B5CA2C6E6DA5002F3BDB /* music-notation */,
@@ -151,10 +135,13 @@
 			buildRules = (
 			);
 			dependencies = (
-				E219E56A25E6E3180060589D /* PBXTargetDependency */,
+				E26346772C790095004EE41F /* PBXTargetDependency */,
+				E26346752C790091004EE41F /* PBXTargetDependency */,
 			);
 			name = "music-notation-import-tests";
 			packageProductDependencies = (
+				E26346782C79009A004EE41F /* MusicNotation */,
+				E263467A2C79009D004EE41F /* MusicNotationImportGuitarPro */,
 			);
 			productName = "music-notation-import-tests";
 			productReference = E223659D25D4CC2500258DD5 /* music-notation-import-tests.xctest */;
@@ -198,6 +185,7 @@
 				TargetAttributes = {
 					E223659C25D4CC2500258DD5 = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1600;
 					};
 					E2DB7E7125C86E0700F7395D = {
 						CreatedOnToolsVersion = 12.4;
@@ -301,14 +289,17 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E219E56A25E6E3180060589D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E2DB7E7125C86E0700F7395D /* music-notation-import */;
-			targetProxy = E219E56925E6E3180060589D /* PBXContainerItemProxy */;
-		};
 		E241054B2C6E6DD70037065A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			productRef = E241054A2C6E6DD70037065A /* MusicNotation */;
+		};
+		E26346752C790091004EE41F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = E26346742C790091004EE41F /* MusicNotationImportGuitarPro */;
+		};
+		E26346772C790095004EE41F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = E26346762C790095004EE41F /* MusicNotation */;
 		};
 		E2A1AC502C63361800348732 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -320,6 +311,7 @@
 		E22365A225D4CC2500258DD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEAD_CODE_STRIPPING = YES;
@@ -332,6 +324,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.woolsoft.music-notation-import-tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -339,6 +332,7 @@
 		E22365A325D4CC2500258DD5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEAD_CODE_STRIPPING = YES;
@@ -563,6 +557,22 @@
 		E241054A2C6E6DD70037065A /* MusicNotation */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = MusicNotation;
+		};
+		E26346742C790091004EE41F /* MusicNotationImportGuitarPro */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MusicNotationImportGuitarPro;
+		};
+		E26346762C790095004EE41F /* MusicNotation */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MusicNotation;
+		};
+		E26346782C79009A004EE41F /* MusicNotation */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MusicNotation;
+		};
+		E263467A2C79009D004EE41F /* MusicNotationImportGuitarPro */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MusicNotationImportGuitarPro;
 		};
 		E2724DE62660B3BF0074BA63 /* MusicNotationImportLilyPond */ = {
 			isa = XCSwiftPackageProductDependency;
