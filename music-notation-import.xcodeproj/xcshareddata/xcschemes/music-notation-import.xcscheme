@@ -65,6 +65,10 @@
          </CommandLineArgument>
          <CommandLineArgument
             argument = "~/Desktop/Xanada.gp"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "~/Desktop/Test1.mscz"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
