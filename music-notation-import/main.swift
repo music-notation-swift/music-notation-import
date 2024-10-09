@@ -9,12 +9,13 @@
 import ArgumentParser
 import Foundation
 import MusicNotationImportGuitarPro
+import MusicNotationImportMuseScore
 
 let argumentHelp: ArgumentHelp = """
 A filename of a file to import.
 
 Currently supported music notation file types include:
-	• Guitar Pro 7 - These are zipped XML files
+	• Guitar Pro 8 - These are zipped XML files
 """
 
 // swiftlint:disable type_name
@@ -37,8 +38,8 @@ struct mncimport: AsyncParsableCommand {
 				throw ValidationError("`\(file.lastPathComponent)` not found.")
 			}
 
-			if !file.hasExtension(["gpif", "gp"]) {
-				throw ValidationError("`\(file.lastPathComponent)` doesn't have the `gpif` file extension.")
+			if !file.hasExtension(["gpif", "gp", "lilypond", "mscz"]) {
+				throw ValidationError("`\(file.lastPathComponent)` doesn't have supported import file extension.")
 			}
 		}
 	}
@@ -49,7 +50,11 @@ struct mncimport: AsyncParsableCommand {
 			let fileExtension = file.pathExtension
 			switch fileExtension {
 			case "gp", "gpif":
-                let importer = GuitarPro7Importer(file: file, verbose: importOptions.verbose, lazy: importOptions.lazy)
+                let importer = GuitarPro8Importer(file: file, verbose: importOptions.verbose, lazy: importOptions.lazy)
+				let score = try importer.consume()
+				print("Resulting score is: \(score)")
+			case "mscz":
+				let importer = MuseScoreImporter(file: file, verbose: importOptions.verbose, lazy: importOptions.lazy)
 				let score = try importer.consume()
 				print("Resulting score is: \(score)")
 			default:

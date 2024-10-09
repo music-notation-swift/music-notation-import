@@ -19,6 +19,7 @@
 		E2DB7E8A25C87E5500F7395D /* FileManager+Exists.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB7E8825C87E5500F7395D /* FileManager+Exists.swift */; };
 		E2DB7E8D25C87ECC00F7395D /* ImportOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB7E8C25C87ECC00F7395D /* ImportOptions.swift */; };
 		E2E260332CB64DAD003AED95 /* MusicNotationImportMuseScore in Frameworks */ = {isa = PBXBuildFile; productRef = E2E260322CB64DAD003AED95 /* MusicNotationImportMuseScore */; };
+		E2E260372CB6F55E003AED95 /* MusicNotationImportMuseScore in Frameworks */ = {isa = PBXBuildFile; productRef = E2E260362CB6F55E003AED95 /* MusicNotationImportMuseScore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -64,6 +65,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2DB7E8425C87C7600F7395D /* ArgumentParser in Frameworks */,
+				E2E260372CB6F55E003AED95 /* MusicNotationImportMuseScore in Frameworks */,
 				E2724DE72660B3BF0074BA63 /* MusicNotationImportLilyPond in Frameworks */,
 				E24105492C6E6DCE0037065A /* MusicNotation in Frameworks */,
 				E21CFEED2C618176007B6886 /* MusicNotationImportGuitarPro in Frameworks */,
@@ -165,6 +167,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				E2E260352CB6F558003AED95 /* PBXTargetDependency */,
 				E241054B2C6E6DD70037065A /* PBXTargetDependency */,
 				E2A1AC502C63361800348732 /* PBXTargetDependency */,
 			);
@@ -174,6 +177,7 @@
 				E2724DE62660B3BF0074BA63 /* MusicNotationImportLilyPond */,
 				E21CFEEC2C618176007B6886 /* MusicNotationImportGuitarPro */,
 				E24105482C6E6DCE0037065A /* MusicNotation */,
+				E2E260362CB6F55E003AED95 /* MusicNotationImportMuseScore */,
 			);
 			productName = "music-notation-import";
 			productReference = E2DB7E7225C86E0700F7395D /* music-notation-import */;
@@ -314,6 +318,10 @@
 		E2E260312CB4C775003AED95 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			productRef = E2E260302CB4C775003AED95 /* MusicNotationImportMuseScore */;
+		};
+		E2E260352CB6F558003AED95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = E2E260342CB6F558003AED95 /* MusicNotationImportMuseScore */;
 		};
 /* End PBXTargetDependency section */
 
@@ -603,6 +611,14 @@
 			productName = MusicNotationImportMuseScore;
 		};
 		E2E260322CB64DAD003AED95 /* MusicNotationImportMuseScore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MusicNotationImportMuseScore;
+		};
+		E2E260342CB6F558003AED95 /* MusicNotationImportMuseScore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MusicNotationImportMuseScore;
+		};
+		E2E260362CB6F55E003AED95 /* MusicNotationImportMuseScore */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = MusicNotationImportMuseScore;
 		};
