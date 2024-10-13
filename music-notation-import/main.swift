@@ -53,7 +53,7 @@ struct mncimport: AsyncParsableCommand {
                 let importer = GuitarPro8Importer(file: file, verbose: importOptions.verbose, lazy: importOptions.lazy)
 				let score = try importer.consume()
 				print("Resulting score is: \(score)")
-			case "mscz":
+			case "mscz", "mscx":
 				let importer = MuseScoreImporter(file: file, verbose: importOptions.verbose, lazy: importOptions.lazy)
 				let score = try importer.consume()
 				print("Resulting score is: \(score)")
