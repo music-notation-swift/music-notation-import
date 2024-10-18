@@ -9,6 +9,25 @@
     }
   ],
   "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:..\/music-notation",
+          "identifier" : "MusicNotation",
+          "name" : "MusicNotation"
+        },
+        {
+          "containerPath" : "container:..\/music-notation-import-guitarpro",
+          "identifier" : "MusicNotationImportGuitarPro",
+          "name" : "MusicNotationImportGuitarPro"
+        },
+        {
+          "containerPath" : "container:..\/music-notation-import-musescore",
+          "identifier" : "MusicNotationImportMuseScore",
+          "name" : "MusicNotationImportMuseScore"
+        }
+      ]
+    },
     "commandLineArgumentEntries" : [
       {
         "argument" : "~\/Desktop\/xanadu.gpif",
@@ -31,6 +50,13 @@
   "testTargets" : [
     {
       "target" : {
+        "containerPath" : "container:..\/music-notation",
+        "identifier" : "MusicNotationTests",
+        "name" : "MusicNotationTests"
+      }
+    },
+    {
+      "target" : {
         "containerPath" : "container:..\/music-notation-import-guitarpro",
         "identifier" : "MusicNotationImportGuitarProTests",
         "name" : "MusicNotationImportGuitarProTests"
@@ -38,9 +64,9 @@
     },
     {
       "target" : {
-        "containerPath" : "container:..\/music-notation",
-        "identifier" : "MusicNotationTests",
-        "name" : "MusicNotationTests"
+        "containerPath" : "container:..\/music-notation-import-musescore",
+        "identifier" : "MusicNotationImportMuseScoreTests",
+        "name" : "MusicNotationImportMuseScoreTests"
       }
     }
   ],
