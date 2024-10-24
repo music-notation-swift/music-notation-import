@@ -25,6 +25,11 @@
           "containerPath" : "container:..\/music-notation-import-musescore",
           "identifier" : "MusicNotationImportMuseScore",
           "name" : "MusicNotationImportMuseScore"
+        },
+        {
+          "containerPath" : "container:music-notation-import.xcodeproj",
+          "identifier" : "E2DB7E7125C86E0700F7395D",
+          "name" : "music-notation-import"
         }
       ]
     },
@@ -50,6 +55,13 @@
   "testTargets" : [
     {
       "target" : {
+        "containerPath" : "container:music-notation-import.xcodeproj",
+        "identifier" : "E223659C25D4CC2500258DD5",
+        "name" : "music-notation-import-tests"
+      }
+    },
+    {
+      "target" : {
         "containerPath" : "container:..\/music-notation",
         "identifier" : "MusicNotationTests",
         "name" : "MusicNotationTests"
@@ -57,16 +69,16 @@
     },
     {
       "target" : {
-        "containerPath" : "container:..\/music-notation-import-guitarpro",
-        "identifier" : "MusicNotationImportGuitarProTests",
-        "name" : "MusicNotationImportGuitarProTests"
+        "containerPath" : "container:..\/music-notation-import-musescore",
+        "identifier" : "MusicNotationImportMuseScoreTests",
+        "name" : "MusicNotationImportMuseScoreTests"
       }
     },
     {
       "target" : {
-        "containerPath" : "container:..\/music-notation-import-musescore",
-        "identifier" : "MusicNotationImportMuseScoreTests",
-        "name" : "MusicNotationImportMuseScoreTests"
+        "containerPath" : "container:..\/music-notation-import-guitarpro",
+        "identifier" : "MusicNotationImportGuitarProTests",
+        "name" : "MusicNotationImportGuitarProTests"
       }
     }
   ],
