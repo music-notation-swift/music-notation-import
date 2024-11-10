@@ -20,6 +20,8 @@
 		E2DB7E8D25C87ECC00F7395D /* ImportOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2DB7E8C25C87ECC00F7395D /* ImportOptions.swift */; };
 		E2E260332CB64DAD003AED95 /* MusicNotationImportMuseScore in Frameworks */ = {isa = PBXBuildFile; productRef = E2E260322CB64DAD003AED95 /* MusicNotationImportMuseScore */; };
 		E2E260372CB6F55E003AED95 /* MusicNotationImportMuseScore in Frameworks */ = {isa = PBXBuildFile; productRef = E2E260362CB6F55E003AED95 /* MusicNotationImportMuseScore */; };
+		E2F295AD2CD9DB0B00BA656A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2F295AB2CD9DB0B00BA656A /* Info.plist */; };
+		E2F295AF2CD9DBBD00BA656A /* URL+FileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F295AE2CD9DBBD00BA656A /* URL+FileTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,6 +49,8 @@
 		E2DB7E8825C87E5500F7395D /* FileManager+Exists.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+Exists.swift"; sourceTree = "<group>"; };
 		E2DB7E8C25C87ECC00F7395D /* ImportOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImportOptions.swift; sourceTree = "<group>"; };
 		E2E2602F2CB4C758003AED95 /* music-notation-import-musescore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "music-notation-import-musescore"; path = "../music-notation-import-musescore"; sourceTree = SOURCE_ROOT; };
+		E2F295AB2CD9DB0B00BA656A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2F295AE2CD9DBBD00BA656A /* URL+FileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+FileTests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 				E241054C2C6E78C10037065A /* music-notation-import.xctestplan */,
 				E2032CFA271632C4007347ED /* README.md */,
 				E2DB7E7425C86E0700F7395D /* music-notation-import */,
+				E2F295AC2CD9DB0B00BA656A /* music-notation-import-tests */,
 				E2DB7E7325C86E0700F7395D /* Products */,
 				E22365A525D4CD1200258DD5 /* Frameworks */,
 				E248B5CA2C6E6DA5002F3BDB /* music-notation */,
@@ -124,6 +129,15 @@
 				E2DB7E8725C87E5500F7395D /* URL+File.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		E2F295AC2CD9DB0B00BA656A /* music-notation-import-tests */ = {
+			isa = PBXGroup;
+			children = (
+				E2F295AE2CD9DBBD00BA656A /* URL+FileTests.swift */,
+				E2F295AB2CD9DB0B00BA656A /* Info.plist */,
+			);
+			path = "music-notation-import-tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,7 +209,7 @@
 				TargetAttributes = {
 					E223659C25D4CC2500258DD5 = {
 						CreatedOnToolsVersion = 12.5;
-						LastSwiftMigration = 1600;
+						LastSwiftMigration = 1620;
 					};
 					E2DB7E7125C86E0700F7395D = {
 						CreatedOnToolsVersion = 12.4;
@@ -230,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2F295AD2CD9DB0B00BA656A /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2F295AF2CD9DBBD00BA656A /* URL+FileTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,7 +566,7 @@
 			repositoryURL = "https://github.com/music-notation-swift/music-notation-import-lilypond.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.0.0;
+				minimumVersion = 0.0.3;
 			};
 		};
 		E2DB7E8225C87C7600F7395D /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
