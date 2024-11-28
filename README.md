@@ -26,6 +26,23 @@ Import various music notation file formats into [music-notation](https://github.
 
   The actual code that implements the XML parsing of GuitarPro specific data.
 
+- [music-notation-import-musescore](https://github.com/music-notation-swift/music-notation-import-musescore)
+
+  The actual code that implements the XML parsing of MuseScore specific data.
+  This is important in that MuseScore is open source and hence a lot of knowledge can be gained by doing this.
+
+- [music-notation-import-lilypond](https://github.com/music-notation-swift/music-notation-import-lilypond)
+
+  The actual code that implements the XML parsing of Lilypond specific data.
+
+## Important considerations
+
+### Music Encoding Initiative	
+
+The Music Encoding Initiative (MEI) is a community-driven, open-source effort to define a system for encoding musical documents in a machine-readable structure.
+
+[MEI Website](https://music-encoding.org)
+
 ## Notes
 
 This is (obviously) a work in progress. It is meant to drive and help develop the `music-notation` project.
