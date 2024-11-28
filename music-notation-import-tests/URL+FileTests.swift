@@ -7,21 +7,24 @@
 //
 
 import Foundation
-@testable import music_notation_import
 import System
 import Testing
 
 @Suite final class URLExtensionTests {
 	@Test func fileExists() async throws {
 		let filenamePath = FilePath("testfile.txt")
-		guard let filePath = Bundle.main.path(
+		guard let filePath = Bundle(for: Self.self).path(
 			forResource: filenamePath.stem,
-			ofType: filenamePath.extension,
-			inDirectory: "TestFiles"
+			ofType: filenamePath.extension
 		) else {
 			Issue.record("Bundle path not found (testfile.txt)")
 			throw URLExtensionTestError.generalFailure
 		}
+
+		#expect(filePath != nil)
+		let fileURL = URL(fileURLWithPath: filePath)
+		let urlExists = fileURL.fileExists
+		#expect(urlExists == true)
 	}
 }
 

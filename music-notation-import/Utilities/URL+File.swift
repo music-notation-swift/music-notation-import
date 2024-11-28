@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension URL {
+public extension URL {
 	var fileExists: Bool { FileManager.default.exists(atUrl: self) == .file }
 	var isFolder: Bool { FileManager.default.exists(atUrl: self) == .folder }
 
