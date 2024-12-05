@@ -43,6 +43,12 @@ The Music Encoding Initiative (MEI) is a community-driven, open-source effort to
 
 [MEI Website](https://music-encoding.org)
 
+### MNX  
+
+A specification for the notation encoding standard. This could be the native file format for the project.
+
+[MNX Website](https://www.w3.org/community/music-notation/2016/05/19/introducing-mnx/)
+
 ## Notes
 
 This is (obviously) a work in progress. It is meant to drive and help develop the `music-notation` project.
