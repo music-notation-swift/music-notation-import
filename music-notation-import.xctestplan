@@ -13,23 +13,23 @@
       "targets" : [
         {
           "containerPath" : "container:..\/music-notation",
-          "identifier" : "MusicNotation",
-          "name" : "MusicNotation"
-        },
-        {
-          "containerPath" : "container:..\/music-notation-import-guitarpro",
-          "identifier" : "MusicNotationImportGuitarPro",
-          "name" : "MusicNotationImportGuitarPro"
-        },
-        {
-          "containerPath" : "container:..\/music-notation-import-musescore",
-          "identifier" : "MusicNotationImportMuseScore",
-          "name" : "MusicNotationImportMuseScore"
+          "identifier" : "MusicNotationTests",
+          "name" : "MusicNotationTests"
         },
         {
           "containerPath" : "container:music-notation-import.xcodeproj",
-          "identifier" : "E2DB7E7125C86E0700F7395D",
-          "name" : "music-notation-import"
+          "identifier" : "E223659C25D4CC2500258DD5",
+          "name" : "music-notation-import-tests"
+        },
+        {
+          "containerPath" : "container:..\/music-notation-import-guitarpro",
+          "identifier" : "MusicNotationImportGuitarProTests",
+          "name" : "MusicNotationImportGuitarProTests"
+        },
+        {
+          "containerPath" : "container:..\/music-notation-import-musescore",
+          "identifier" : "MusicNotationImportMuseScoreTests",
+          "name" : "MusicNotationImportMuseScoreTests"
         }
       ]
     },

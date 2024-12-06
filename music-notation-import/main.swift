@@ -26,10 +26,6 @@ struct mncimport: AsyncParsableCommand {
 
 	mutating func validate() throws {
 		for file in files {
-			if !file.isFileURL {
-				throw ValidationError("`\(file.lastPathComponent)` must be a valid reference to a local file.")
-			}
-
 			if file.isFolder {
 				throw ValidationError("`\(file.lastPathComponent)` is a folder.")
 			}
@@ -58,7 +54,7 @@ struct mncimport: AsyncParsableCommand {
 				let score = try importer.consume()
 				print("Resulting score is: \(score)")
 			default:
-				print("Unsupported file type \(fileExtension)")
+				throw ValidationError("`\(file.lastPathComponent)` Unsupported file type \(fileExtension)")
 			}
 		}
 	}
