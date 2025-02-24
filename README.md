@@ -37,7 +37,7 @@ Import various music notation file formats into [music-notation](https://github.
 
 ## Important considerations
 
-### Music Encoding Initiative	
+### Music Encoding Initiative
 
 The Music Encoding Initiative (MEI) is a community-driven, open-source effort to define a system for encoding musical documents in a machine-readable structure.
 

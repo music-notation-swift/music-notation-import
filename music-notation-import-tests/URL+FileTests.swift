@@ -21,7 +21,6 @@ import Testing
 			throw URLExtensionTestError.generalFailure
 		}
 
-		#expect(filePath != nil)
 		let fileURL = URL(fileURLWithPath: filePath)
 		let urlExists = fileURL.fileExists
 		#expect(urlExists == true)
@@ -37,7 +36,6 @@ import Testing
 			throw URLExtensionTestError.generalFailure
 		}
 
-		#expect(filePath != nil)
 		let fileURL = URL(fileURLWithPath: filePath)
 		let urlExists = fileURL.isFolder
 		#expect(urlExists == false)
@@ -53,7 +51,6 @@ import Testing
 			throw URLExtensionTestError.generalFailure
 		}
 
-		#expect(filePath != nil)
 		let fileURL = URL(fileURLWithPath: filePath)
 		#expect(fileURL.hasExtension(["txt"]) == true)
 	}
